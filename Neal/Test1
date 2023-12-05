@@ -2,3 +2,49 @@ Amazon CloudWatch is a performance monitoring service. AWS services send metrics
 CloudTrail is used for auditing, not performance monitoring
 Inspector is an automated security service
 Systems Manager is used for managing EC2 instances such as installing patches and software
+
+It is unlikely that you can simply host legacy applications using AWS Lambda.
+You cannot host legacy application code in an S3 static website, only static content is possible.
+
+AWS Artifact is your go-to, central resource for compliance-related information that matters to you. It provides on-demand access to AWS’ security and compliance reports and select online agreements.
+
+You cannot create IAM users in different Regions as the IAM service is a global service.
+
+AWS Trusted Advisor is an online tool that provides you real time guidance to help you provision your resources following AWS best practices.
+"AWS Health Dashboard" is incorrect. The  health dashboard shows issues or upcoming events that may impact your resources. It does not notify of service limit breaches.
+"Amazon RDS" is a managed SQL database and has nothing to do with service limits generally.
+Cost Explorer is used for viewing costs and will not assist with service limits.
+
+Cost allocation tags can be used to tag and categorize your resources and then run view the billing in Cost Explorer and the cost allocation report. For example you can tag your resources by department or project and then view costs attributed to the resources used by those groups. ou do not need to split your usage across multiple accounts, you can instead use cost allocation tags.
+ "AWS Trusted Advisor" advises you on best practices for provisioning resources.
+Consolidated billing will give you usage per account but not per project.
+
+AWS does not secure your applications.
+You have no say in what hardware AWS utilize.
+You cannot access the AWS data centers.
+
+AWS Batch enables developers, scientists, and engineers to easily and efficiently run hundreds of thousands of batch computing jobs on AWS.
+AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.
+CloudTrail is used for auditing. The Elastic File System (EFS) is used for storing data and is mounted by EC2 instances. Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS.
+
+AWS Outposts is a fully managed service that offers the same AWS infrastructure, AWS services, APIs, and tools to virtually any datacenter, co-location space, or on-premises facility for a truly consistent hybrid experience. 
+Amazon Connect provides a seamless omnichannel experience through a single unified contact center for voice, chat, and task management.
+Direct Connect is used for creating a low-latency private connection to an on-premises data center but it cannot be used to extend the VPC.
+Amazon WorkSpaces is a managed, secure Desktop-as-a-Service (DaaS) solution.
+
+Amazon MSK (Managed Streaming for Kafka) is the correct choice as it is a fully managed service that facilitates building and running applications built on Apache Kafka without having to manage the underlying infrastructure. It would allow the financial services firm to focus on building their analytics platform without being concerned about Kafka’s infrastructure management, hence reducing the operational overhead.
+"Amazon SQS" is a message queue service used to decouple the components of a cloud application, not suited for setting up and managing a real-time analytics platform based on Apache Kafka.
+ Amazon Kinesis is used for real-time streaming data and can technically be used to build a real-time analytics solution, but still it is not the best option when the requirement specifically mentions leveraging Apache Kafka. Kinesis has its own streaming data solution that is separate from Kafka.
+"Amazon Redshift" is a data warehousing service designed to work with business intelligence tools for analytical reporting, and it does not offer Apache Kafka as a service, which is what is needed for real-time analytics in this scenario.
+
+AWS provide SDKs for various programming languages and these can be used for integrating the features of AWS services directly into an application.
+The AWS CLI is used for running commands but is not the best tool for integrating features of AWS services directly into an application.
+CodeDeploy is used for deploying code from a code repository and actually installing the application.
+CodePipeline is used for automating the code release lifecycle.
+
+An Amazon Machine Image AMI provides the information required to launch an instance including the mapping of EBS volumes.
+Amazon Elastic File System - EFS volumes cannot be used for the root storage volume but can be mounted to store data.
+
+Using a firewall with AWS resources is recommended to reduce the attack surface of your services which can mitigate some DDoS attacks.
+"Amazon CloudWatch" is a performance monitoring and will not protect against DDoS.
+"AWS CloudTrail" is incorrect. Logging API calls will not protect against DDoS.
