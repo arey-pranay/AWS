@@ -46,5 +46,93 @@ An Amazon Machine Image AMI provides the information required to launch an insta
 Amazon Elastic File System - EFS volumes cannot be used for the root storage volume but can be mounted to store data.
 
 Using a firewall with AWS resources is recommended to reduce the attack surface of your services which can mitigate some DDoS attacks.
-"Amazon CloudWatch" is a performance monitoring and will not protect against DDoS.
-"AWS CloudTrail" is incorrect. Logging API calls will not protect against DDoS.
+"Amazon CloudWatch" is for performance monitoring and will not protect against DDoS.
+"AWS CloudTrail" does Logging API calls and so will not protect against DDoS.
+The AWS Health dashboard is not useful for monitoring and will not protect against DDoS.
+
+According to the shared responsibility model, AWS is responsible to the management of all AWS global infrastructure components including Regions, Availability Zones, Edge locations, Regional Edge Caches, and Local Zones.
+Applications are deployed by customers, not AWS.
+Patch management is a shared responsibility. Customers must patch instances databases running on EC2 and AWS will patch the underlying infrastructure and some managed services.
+Customers are responsible for implementing access controls for their data.
+
+Access keys are long-term credentials for an IAM user or the AWS account root user. You can use access keys to sign programmatic requests to the AWS CLI or AWS API (directly or using the AWS SDK).
+
+Access keys consist of two parts: an access key ID (for example, AKIAIOSFODNN7EXAMPLE) and a secret access key (for example, wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY).
+Like a user name and password, you must use both the access key ID and secret access key together to authenticate your requests.
+An IAM user name and password can be used for console access but cannot be used with the CLI or API.
+
+Loose coupling is when you break systems down into smaller components that are loosely coupled together. This reduces interdependencies between systems components. This is achieved in the cloud using messages buses, notification and messaging services.
+Removing single points of failure ensures fault tolerance and high availability. This is easily achieved in the cloud as the architecture and features of the cloud support the implementation of highly available and fault tolerant systems.
+
+AWS Cost Explorer has an easy-to-use interface that lets you visualize, understand, and manage your AWS costs and usage over time.
+AWS Budgets allows you to set custom budgets to track your cost and usage from the simplest to the most complex use cases.
+Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS
+AWS Organizations allows you to organize accounts, create accounts programmatically, and leverage consolidated billing.
+
+There are 5 pillars and under the operational excellence pillar the following best practices are recommended:
+• Perform operations as code
+• Make frequent, small, reversible changes
+• Refine operations procedures frequently
+• Anticipate failure
+• Learn from all operational failures
+
+AWS WAF can be used to protect on-premises resources if they are deployed behind an Application Load Balancer (ALB). In this scenario the on-premises website servers are added to a target group by IP address. The ALB has a WAF WebACL attached to it and distributes connections to the on-premises website.
+A route table cannot be used for protecting resources running outside AWS.
+Security groups can only be attached to EC2 instances.
+Network ACLs only filter traffic entering and leaving a VPC subnet.
+
+Enabling encryption for data at rest is definitely a good practice and data in transit should also be encrypted where possible as well. It is also a good practice to limit access privileges according to the principal of least privilege. This means limiting privileges to those required to perform a specific role.
+
+Amazon OpenSearch Service is designed to set up, manage, and scale search and analytics solutions, providing the necessary functionalities to efficiently find articles based on different criteria.
+Amazon SQS is a message queuing service used to decouple the components of a cloud application
+AWS Lambda is mainly used to run code in response to events and automatically manage the computing fleet.
+Amazon EC2 is used to host applications and can technically host a web application
+
+An Amazon VPC includes multiple Availability Zones. Within a VPC you can create subnets in each AZ that is available in the Region and distribute your resources across these subnets for high availability.
+A VPC cannot include multiple Regions. A VPC cannot include multiple Edge locations as these are independent of the Regions in which a VPC is created. You can only attach one Internet gateway to each VPC.
+
+The most efficient option is to use multiple EC2 instances and distribute the workload across them. This is an example of horizontal scaling and will allow the workload to keep growing in size without any issue and without increasing the overall processing timeframe.
+"Run the batch job on a larger Amazon EC2 instance type with more CPU" may help initially but over time this will not scale well and the workload will take many days to complete.
+"Change the Amazon EC2 volume type to a Provisioned IOPS SSD volume" This will improve the underlying performance of the EBS volume but does not assist with processing (more CPU is needed, i.e. by spreading across instances).
+Bare metal instances are used for workloads that require access to the hardware feature set (such as Intel VT-x), for applications that need to run in non-virtualized environments for licensing or support requirements, or for customers who wish to use their own hypervisor.
+
+The Principal element specifies the user, account, service, or other entity that is allowed or denied access to a resource. 
+Actions are the permissions that you can specify in a policy.
+Resources are the ARNs of resources you wish to specify permissions for.
+Conditions define certain conditions to apply when granting permissions such as the source IP address of the caller.
+
+"Patching database software" and "Taking a backup of a database"is taken care of by aws/
+AWS does not audit your source code. You can use Amazon CodeGuru for recommendations for improvement though.
+AWS does not create your schema; this is something that’s in the customer’s control.
+AWS does not perform any security testing of your applications.
+
+A convertible reserved instance enables you to exchange one or more Convertible Reserved Instances for another Convertible Reserved Instance with a different configuration, including instance family, operating system, and tenancy.
+With standard RIs you cannot change the instance type but you can change the instance size.
+Regional RIs apply to instance usage within any AZ in a specified Region.
+Zonal RIs apply to instance usage within a specific AZ within an AWS Region.
+
+Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds, all within a developer-friendly environment.
+Direct Connect is a private network connection between an on-premises data center and AWS.
+Auto Scaling launches and terminates instances, this does not reduce latency for global users.
+ElastiCache is a database caching service, it is not used to cache websites.
+
+Amazon Aurora is a relational database that is compatible with MySQL and PostgreSQL database engines. Aurora is extremely fast and scales up to 128 TB. You can also deploy replicas for read scaling within and across Regions.
+DynamoDB is a NoSQL (non-relational) database and you cannot deploy a MySQL database as it is a relational database type.
+Athena is used for querying data in Amazon S3 using SQL.
+DocumentDB is a NoSQL database that supports document data structures.
+
+The ability to quickly provision resources on AWS is a good example of speed and agility. On AWS the resources are readily available and can be deployed extremely quickly. Scalable compute capacity is another example as it gives you the agility to easily reconfigure your resources with more or less capacity as is required.
+
+AWS are responsible for updating firmware on the physical Amazon EC2 host servers. Customers are then responsible for any patching of the EC2 operating system and any installed software.
+"Configuring network ACLs to block malicious attacks", "Patching software running on Amazon EC2 instances", and "Updating security group rules to enable connectivity" are customer responsibilities.
+
+Access keys are long-term credentials for an IAM user or the AWS account root user. You can use access keys to sign programmatic requests to the AWS CLI or AWS API (directly or using the AWS SDK).
+You use a user name and password for the management console.
+SSL/TLS certificates are used for creating encrypted channels using HTTPS.
+
+An Amazon Machine Image (AMI) provides the information required to launch an instance. You must specify an AMI when you launch an instance. You can launch multiple instances from a single AMI when you need multiple instances with the same configuration. You can use different AMIs to launch instances when you need instances with different configurations.
+EBS is block-based storage for EC2.
+AWS Systems Manager gives you visibility and control of your infrastructure on AWS.
+Amazon AppStream 2.0 is a fully managed non-persistent application and desktop streaming service.
+
+The Amazon Simple Storage Service (S3) offers virtually unlimited storage. The total volume of data and number of objects you can store are unlimited. Individual Amazon S3 objects can range in size from a minimum of 0 bytes to a maximum of 5 terabytes. The largest object that can be uploaded in a single PUT is 5 gigabytes
