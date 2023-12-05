@@ -1,0 +1,4 @@
+Amazon CloudWatch is a performance monitoring service. AWS services send metrics about their utilization to CloudWatch which collects the metrics. You can then view the results in CloudWatch and configure alarms.
+CloudTrail is used for auditing, not performance monitoring
+Inspector is an automated security service
+Systems Manager is used for managing EC2 instances such as installing patches and software
