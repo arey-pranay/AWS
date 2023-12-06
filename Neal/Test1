@@ -136,3 +136,7 @@ AWS Systems Manager gives you visibility and control of your infrastructure on A
 Amazon AppStream 2.0 is a fully managed non-persistent application and desktop streaming service.
 
 The Amazon Simple Storage Service (S3) offers virtually unlimited storage. The total volume of data and number of objects you can store are unlimited. Individual Amazon S3 objects can range in size from a minimum of 0 bytes to a maximum of 5 terabytes. The largest object that can be uploaded in a single PUT is 5 gigabytes
+
+A company is migrating a monolithic application that does not scale well into the cloud and refactoring it into a microservices architecture.
+A microservices architecture will help ensure that each component of the application can scale independently and be updated independently. Loose coupling further assists as it places reduces the dependencies between systems and ensures that messages and data being passed between application components can be reliably and durably stored.
+
