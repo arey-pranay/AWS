@@ -140,3 +140,49 @@ The Amazon Simple Storage Service (S3) offers virtually unlimited storage. The t
 A company is migrating a monolithic application that does not scale well into the cloud and refactoring it into a microservices architecture.
 A microservices architecture will help ensure that each component of the application can scale independently and be updated independently. Loose coupling further assists as it places reduces the dependencies between systems and ensures that messages and data being passed between application components can be reliably and durably stored.
 
+The company should create cost allocation tags that specify the department and assign them to resources. These tags must be activated so they are visible in the cost allocation report. Once this is done and a monthly cost allocation report has been configured it will be easy to monitor the costs for each department.
+Cost explorer will not show a breakdown of the costs by department.
+A billing alert simply lets you know you have reached a cost threshold.
+This will not help as billing is not broken out by VPC so they will not be able to determine the costs per department using this method.
+
+An Amazon Relational Database Service (RDS) deployment across multiple availability zones is a good example of using the reliability pillar of the AWS Well-Architected Framework.
+"Amazon EBS provisioned IOPS volume" - an example of performance efficiency.
+"Attach a WebACL to a CloudFront distribution" - an example of using the security pillar.
+"Use CloudFormation to deploy infrastructure" - an example of using the operational excellence pillar.
+
+Amazon Macie is a fully managed data security and data privacy service that uses machine learning and pattern matching to discover and protect your sensitive data in AWS. Amazon Macie automates the discovery of sensitive data at scale and lowers the cost of protecting your data.
+Amazon GuardDuty is a threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts, workloads, and data stored in Amazon S3.
+The AWS Policy Generator is a tool that enables you to create policies that control access to Amazon Web Services (AWS) products and resources.
+Amazon Detective automatically processes terabytes of event data records about IP traffic, AWS management operations, and malicious or unauthorized activity.
+
+AWS CodeCommit is a fully-managed source control service that hosts secure Git-based repositories. It makes it easy for teams to collaborate on code in a secure and highly scalable ecosystem.
+CodeDeploy is a deployment service that deploys your application onto infrastructure.
+CodePipeline is a continuous delivery service that automates release pipelines for code. CodeCommit can be used in a pipeline.
+DataSync is used for replication and migrating data between storage systems and AWS.
+
+Within the AWS Budgets service you can use AWS Budgets Actions to automatically terminate certain resources.
+Deleting all of your AWS resources with a single click can be done using third party tools, but not natively through the console.
+The cost management tools do not integrate with the tools used to launch EC2 instances and cannot choose the best pricing plan.
+This is performed using lifecycle management in Amazon S3, it is not a task performed by cost management tools.
+
+A self-managed relational database can be installed on Amazon EC2. When using this deployment you can choose the operating system and instance type that suits your needs and then install and manage any database software you require.
+RedShift is managed data warehouse solution and is better suited to use cases where analytics of data is required.
+ElastiCache is a managed service for in-memory, high-performance caching of database content.
+DynamoDB is a non-relational (NoSQL) type of database.
+
+To make the deployment highly available the user should launch the instances across multiple Availability Zones in a single AWS Region. Elastic Load Balancers can only serve targets in a single Region so it is not possible to deploy across Regions.
+The pricing model is not relevant to high availability and deploying in a single AZ does not result in a highly available deployment.
+You cannot use an ELB with instances in multiple Regions and using an EIP does not help.
+Using reserved instances may not be appropriate as we do not know whether this is going to be a long-term workload or not.
+
+Amazon EC2 is an infrastructure as a service (IaaS) solution. This means the underlying hardware and software layer for running a virtual server are managed for you. 
+AWS Lambda, AWS Fargate and Amazon DynamoDB are serverless and you do not need to manage patches.
+
+You do not outsource all operational risk; you still have to manage risk for the applications you run on AWS.
+You don’t have any control over data center infrastructure in the AWS Cloud.
+You must still develop your own applications on the AWS Cloud.
+
+Scheduled scaling helps you to set up your own scaling schedule according to predictable load changes.
+Predictive scaling uses daily and weekly trends to determine when to scale. In this case the Cloud Practitioner knows about the event that will require more resources.
+This policy will cause the ASG to attempt to keep resource utilization at the target value.
+Step scaling will launch resources in response to demand, this will not ensure the resource are ready at the right time as there will be a delay.
