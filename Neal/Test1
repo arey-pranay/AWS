@@ -186,3 +186,57 @@ Scheduled scaling helps you to set up your own scaling schedule according to pre
 Predictive scaling uses daily and weekly trends to determine when to scale. In this case the Cloud Practitioner knows about the event that will require more resources.
 This policy will cause the ASG to attempt to keep resource utilization at the target value.
 Step scaling will launch resources in response to demand, this will not ensure the resource are ready at the right time as there will be a delay.
+
+Amazon CloudWatch is a performance monitoring service. AWS services send metrics about their utilization to CloudWatch which collects the metrics. Additionally, CloudWatch collects metrics about account activity such as billing information which can also be viewed.
+AWS CloudTrail is an auditing service that monitors API activity in your account. Whenever you perform any operation in the account this results in an API action and this information is recorded to create an audit trail.
+AWS Trusted Advisor  is used to assist with guidance on provisioning resources according to best practice.
+Amazon Connect is a contact center service.
+
+2 of the benefits of a managed Amazon RDS service on EC2 are that you get automated backups and automatic software patching.
+Schema management, Indexing of tables and Root access to OS are not the features of the managed service.
+
+AWS Data Exchange is the correct answer because this service allows customers to find, subscribe to, and use third-party data in the cloud. Companies can subscribe to a diverse selection of data products provided by various data providers.
+Glue is a fully managed extract, transform, and load (ETL) service that makes it easy to prepare and load data for analytics.
+AWS Data Pipeline is designed to facilitate the processing and transfer of data between different AWS services and on-premises data sources. 
+AWS Redshift is a data warehouse service that is used to analyze data using standard SQL and existing Business Intelligence tools.
+
+Amazon CloudFront is a content delivery network (CDN) that caches content around the world for lower latency access. 
+AWS Global Accelerator enables access to your application by leveraging the same Edge Locations as CloudFront and routing connections across the AWS global network.
+AWS Direct Connect provides private connections from data centers to AWS.
+AWS Transit Gateway is used for optimizing the network topology of interconnected VPCs and on-premises networks.
+Snowcone is used as an edge device for transferring data.
+
+AWS Step Functions allows developers to coordinate multiple AWS services into serverless workflows. 
+Amazon SQS (Simple Queue Service) is incorrect because, while it can be used to decouple cloud applications, it doesn't offer workflow orchestration with visual representation and tracking features.
+
+Partner Solutions are built by Amazon Web Services (AWS) solutions architects and partners to help you deploy popular technologies on AWS, based on AWS best practices for security and high availability. 
+CloudFormation is used to deploy infrastructure from templates.
+Artifact provides on-demand access to AWS security and compliance reports.
+Config is a service used for compliance relating the configuration of AWS resources.
+
+Amazon Simple Workflow Service is a workflow orchestration service, not a messaging service.
+
+The auto recovery feature of EC2 automatically moves the instance to another host, not to another Region.
+
+Changing the account name and Changing AWS Support plans require root user always.
+Enabling encryption for S3, Viewing AWS CloudTrail logs and Changing payment currency do not require.
+
+CodeBuild is used for compiling and testing code ahead of deployment.
+AWS Health Dashboard will not warn you about underutilization of resources.
+
+With AWS CloudFormation you can deploy infrastructure such as Amazon ElastiCache clusters by defining your desired configuration state in code using a template file written in JSON or YAML. CloudFormation will then deploy the resources by creating a Stack according to the template file.
+The Concierge Support Team is available for customer who have an Enterprise level support plan. This team does not launch resources for you.
+AWS Data Pipeline is a web service that helps you reliably process and move data between different AWS compute and storage services.
+
+An Amazon EC2 Dedicated Host is a physical server fully dedicated for your use, so you can help address corporate compliance requirements.
+With dedicated instances you are not given a specific physical server to run your instances on.
+
+With RDS you cannot access the operating system so the requirement for running scripts on the OS rules.
+Amazon DynamoDB is a non-relational database.
+Amazon S3 is an object-storage system and is not suitable for running a relational database.
+
+The AWS Cloud Development Kit (AWS CDK) is an open source software development framework to define cloud application resources using familiar programming languages.
+CodeGuru is used to review code and provide intelligent recommendations for improvement.
+AWS Config is used for configuration compliance management.
+CodeCommit is a fully-managed source control service.
+
