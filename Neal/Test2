@@ -1,0 +1,45 @@
+AWS CodeCommit is a fully managed source control service that hosts secure Git-based repositories.
+AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet.
+When re-architecting a monolithic application- Design for scalability and Rely on Individual Componenets.
+AWS Shield is a managed distributed denial of service (DDoS) protection service that safeguards applications running on AWS. 
+Amazon CloudFront and AWS Global Accelerator help decrease network latency for a globally dispersed user base.
+Amazon EMR (previously called Amazon Elastic MapReduce) is a managed cluster platform that simplifies running big data frameworks, such as Apache Hadoop and Apache Spark , on AWS to process and analyze vast amounts of data.
+
+Shield -- DDoS
+WAF -- httlps
+Security group --EC2
+Network ACLs --subnet
+
+AWS Storage Gateway is a hybrid cloud storage service that gives you on-premises access to virtually unlimited cloud storage. You can use Storage Gateway to simplify storage management and reduce costs for key hybrid cloud storage use cases.
+
+Service control policies (SCPs) are a type of organization policy that you can use to manage permissions in your organization. SCPs offer central control over the maximum available permissions for all accounts in your organization.
+
+AWS Trusted Advisor would identify if unrestricted access to a resource has been allowed by a security group.
+
+AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.
+
+AWS Direct Connect to establish a private virtual interface from your on-premise network directly to your Amazon VPC, providing you with a private, high bandwidth network connection between your network and your VPC.
+
+AWS DataSync is an online data movement and discovery service that simplifies and accelerates data migrations to AWS as well as moving data to and from on-premises storage, edge locations, other cloud providers, and AWS Storage services.
+
+The AWS CloudHSM service helps you meet corporate, contractual, and regulatory compliance requirements for data security by using dedicated Hardware Security Module (HSM) instances within the AWS cloud.
+
+Design for failure is a/the design principle is supported by deploying workloads across multiple Availability Zones.
+
+Narenda Modi (Namo) always says "No"
+dyNamoDB ----> NoSQL
+
+Spot Instances should be avoided if a workload cannot accept interruption if capacity becomes temporarily unavailable.
+
+Snowball Edge devices have endpoints compatible with Amazon S3, Amazon EC2 and Amazon Machine Images AMI. This allows for programmatic use cases. 
+It also support the following features: 
+Fast data migration
+GPU support
+Clustering
+Kubernetes
+Amazon S3 compatible storage
+Amazon S3 Adapter
+Tape data migration
+Block storage
+
+Using AWS Budgets, you can set a budget that alerts you when you exceed (or are forecasted to exceed) your budgeted cost or usage amount.
