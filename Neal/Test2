@@ -73,4 +73,22 @@ Trusted Advisor helps you to build your AWS resources in accordance with best pr
 Updating Amazon EC2 host firmware is AWS's responsibility.
 Granting permissions to users and services, Encrypting data at rest, Updating operating systems are cutomers responibilities.
 
---Question 34
+Cost optimization can include using Auto Scaling groups to scale the number of EC2 instances according to actual demand. Also, using Amazon EC2 reserved instances for suitable workloads is a good way of optimizing costs over the longer term.
+
+All client-side and server-side encryption is a responsibility of the customer using the AWS Cloud. 
+Securing servers and racks at AWS data centers, Maintaining firewall configurations at a hardware level, and Maintaining physical networking configuration are AWS responsibilities.
+
+According to the AWS Shared Responsibility Model updating Amazon EC2 guest operating systems falls under the area of security “in” the cloud which is a customer responsibility. 
+With EC2, AWS manage the underlying platform on which EC2 runs but you must launch and manage your operating systems.
+
+Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. Amazon Inspector automatically assesses applications for exposure, vulnerabilities, and deviations from best practices.
+Security groups are instance-level firewalls used for controlling network traffic reaching and leaving EC2 instances.
+AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources.
+Amazon Macie is a fully managed data security and data privacy service that uses machine learning and pattern matching to discover and protect sensitive data in AWS.
+
+The TCO calculators allow you to estimate the cost savings when using AWS, compared to on-premises, and provide a detailed set of reports that can be used in executive presentations. The calculators also give you the option to modify assumptions that best meet your business needs.
+
+AWS Activate for Startups is specially designed to provide startups with the low-cost, easy-to-use infrastructure needed to scale and grow. It offers a host of benefits including AWS credits, training, technical support, and other resources which can aid startups in building their business successfully.
+AWS Educate is primarily targeted at the educational sector, providing students and educators with the resources needed to accelerate cloud-related learning.
+AWS Marketplace is a digital catalog that helps customers find, buy, deploy, and manage third-party software, services, and data.
+AWS Partner Network is aimed at helping APN Partners to build successful AWS-based businesses or solutions by providing business, technical, marketing, and go-to-market support. It is more suited for established companies or businesses that are partnering with AWS, rather than startups looking to build their business.
