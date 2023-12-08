@@ -54,4 +54,23 @@ AWS take care of security patches for the underlying infrastructure but not your
 Amazon QuickSight is a scalable, serverless, embeddable, machine learning-powered business intelligence (BI) service built for the cloud.
 RedShift is a data warehouse solution not a dashboard. Amazon Kinesis is a service for collecting streaming data. Amazon Athena is used for running SQL queries on data in Amazon S3.
 
-Question 18--
+AWS IQ is the correct answer because it is designed to help customers find AWS certified third-party experts for on-demand help. 
+AWS Training and Certification does help in learning and understanding AWS services better but  it does not facilitate the process of connecting customers with AWS experts for project implementation.
+AWS Support provides a range of resources and tools to help customers build, deploy, and manage applications on AWS but it doesn’t offer the feature to connect directly with certified AWS experts for personalized project assistance.
+AWS Marketplace mainly serves as a platform to find, buy, deploy, and manage third-party software, services, and data, and does not focus on connecting customers with AWS certified experts for project consultation and implementation.
+
+As part of the AWS Shared Responsibility Model, the customer does not have any insight into how physical infrastructure is managed or maintained. The customer is responsible for security in the cloud, whereas AWS are responsible for the security of the cloud.
+Also, AWS customers have no insight into how Amazon S3 works behind the scenes, as Amazon S3 is a fully managed object storage service. Users simply use Amazon S3, and AWS manage all the infrastructure, OS patching and maintenance etc. for you.
+
+An Availability Zone (AZ) is one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region.
+Edge locations are used by Amazon CloudFront for caching content.
+
+CloudTrail provides event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command line tools, and other AWS services.
+This event history simplifies security analysis, resource change tracking, and troubleshooting. 
+CloudWatch is used for performance monitoring.
+Trusted Advisor helps you to build your AWS resources in accordance with best practices.
+
+Updating Amazon EC2 host firmware is AWS's responsibility.
+Granting permissions to users and services, Encrypting data at rest, Updating operating systems are cutomers responibilities.
+
+--Question 34
