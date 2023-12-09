@@ -1,0 +1,9 @@
+AWS Organizations offers Service control policies (SCPs) which are a type of organization policy that you can use to manage permissions in your organization.
+AWS IAM is used for assigning permissions but SCPs in AWS Organizations are used to control which API actions are allowed in an account.
+
+AWS Elastic Beanstalk and AWS CloudFormation are both examples of automation. Beanstalk is a platform service that leverages the automation capabilities of CloudFormation to build out application architectures.
+Elastic Load Balancing (ELB) is used for distributing incoming connections to Amazon EC2 instances. 
+AWS Lambda is a compute service, not an automation service.
+
+Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily. Amazon Cognito scales to millions of users and supports sign-in with social identity providers, such as Apple, Facebook, Google, and Amazon, and enterprise identity providers via SAML 2.0 and OpenID Connect.
+AWS Single Sign-On (AWS SSO) is where you create, or connect, your workforce identities in AWS once and manage access centrally across your AWS organization and doesn’t use SAML.
