@@ -14,3 +14,63 @@ An Internet gateway is attached to a VPC and allows inbound traffic from the int
 A NAT gateway is used for outbound internet access for instances running in a private subnet.
 The route table is used within a VPC for directing traffic.
 A VGW is used for IPSec VPN connections to access a VPC.
+
+AWS CloudTrail is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account.
+AWS Directory Service provides several options for running directory services on AWS and connecting to directory services on-premises.
+Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS.
+CloudWatch is used for performance monitoring, not auditing.
+
+Amazon EventBridge is a serverless event bus that makes it easier to build event-driven applications at scale using events generated from your applications. 
+Connect is a cloud-based telecommunications service providing managed cloud-based customer contact centers, thus having nothing to do with workflow automation.
+
+Fargate is a serverless container service, which can be used within automation workflows, however, does not automate parts of your architecture in of itself.
+
+Rekognition Image is a deep learning powered image recognition service that detects objects, scenes, and faces; extracts text; recognizes celebrities; and identifies inappropriate content in images. It also allows you to search and compare faces.
+You should use the Elastic Transcoder service to transcode audio.
+
+AWS Cloud9 is the correct choice because it is a cloud-based integrated development environment (IDE) that allows developers to write, run, and debug their code using only a web browser.
+AWS CodeStar is enables you to quickly develop, build, and deploy applications on AWS, it is not a service that provides a cloud-based IDE where you can write, run, and debug code directly from a web browser.
+AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy.
+Amazon WorkSpaces is a managed, secure Desktop-as-a-Service (DaaS) solution, it does not inherently provide a cloud-based IDE focused on coding, running, and debugging development projects directly in a browser.
+
+Reservations provide you with greater discounts, up to 75%, by paying for capacity ahead of time. Some of the services you can reserve include: EC2, DynamoDB, ElastiCache, RDS, and RedShift.
+You cannot reserve Amazon S3, AWS Lambda, and Amazon CloudWatch.
+
+Server certificates can be used to authenticate to some AWS services using HTTPS.
+Access keys are a combination of an access key ID and a secret access key. They are used to make programmatic calls to AWS using the API.
+Key pairs should not be confused with access keys. Key pairs are used for authenticating to Amazon EC2 instances.
+Console passwords are used for signing users into the AWS Management Console, not for making programmatic calls to AWS services.
+
+VPC Flow Logs is a feature that enables you to capture information about the IP traffic going to and from network interfaces in your VPC.
+
+An internet gateway is attached to a VPC and used for sending and receiving data from the internet.
+CloudTrail is used for auditing API activity.
+VPC endpoints are used for connecting to public AWS services using private IP addresses.
+
+AWS Direct Connect is a cloud service solution that makes it easy to establish a dedicated network connection from your premises to AWS. 
+A virtual private network (VPN) uses the internet and does not offer consistent network bandwidth or performance.
+This is contact centre solution, not a networking technology.
+CloudFront is a CDN used for caching content. It is not used for connecting from on-premises data centers to the AWS Cloud.
+
+An access key ID and secret access key are used to sign programmatic requests to AWS. They are associated with an IAM user.
+
+Reserved Instances:
+Yes- Reduced cost, Reserve capacity
+No - More flexibility, Uses dedicated hardware, High availability
+
+Amazon GuardDuty offers threat detection and continuous security monitoring for malicious or unauthorized behavior to help you protect your AWS accounts and workloads.
+AWS Shield is a managed Distributed Denial of Service (DDoS) protection service.
+AWS Key Management Service gives you centralized control over the encryption keys used to protect your data.
+AWS CloudHSM is a cloud-based hardware security module (HSM) that enables you to easily generate and use your own encryption keys on the AWS Cloud.
+
+Amazon OpenSearch Service makes it easy for you to perform interactive log analytics, real-time application monitoring, website search, and more. 
+AWS Control Tower provides the easiest way to set up and govern a secure, multi-account AWS environment, called a landing zone. 
+AWS Fargate is a serverless, pay-as-you-go compute engine that lets you focus on building applications without managing servers.
+
+Amazon EC2 instances running Linux are billed in one second increments, with a minimum of 60 seconds.
+
+AWS Config is a fully-managed service that provides you with an AWS resource inventory, configuration history, and configuration change notifications to enable security and regulatory compliance.
+CloudTrail tracks API activity. This means it is used to monitor who does what on Amazon. It does not provide a resource inventory or configuration history.
+Amazon GuardDuty offers threat detection and continuous security monitoring for malicious or unauthorized behavior to help you protect your AWS accounts and workloads.
+AWS Artifact is used for obtaining on-demand security and compliance reports and select online agreements.
+
