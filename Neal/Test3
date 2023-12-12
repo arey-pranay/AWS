@@ -74,3 +74,14 @@ CloudTrail tracks API activity. This means it is used to monitor who does what o
 Amazon GuardDuty offers threat detection and continuous security monitoring for malicious or unauthorized behavior to help you protect your AWS accounts and workloads.
 AWS Artifact is used for obtaining on-demand security and compliance reports and select online agreements.
 
+Amazon Connect is a self-service, cloud-based contact center service that makes it easy for businesses to deliver better customer service at a lower cost.
+With a Network ACL you can block a specific IP address that would be coming inbound into your subnet. This would prevent a specific IP from gaining access if you suspected them of being a bad actor.
+You cannot block individual IP addresses on Security Groups.
+
+Edge Locations are parts of the Amazon CloudFront content delivery network (CDN) that are all around the world and are used to get content closer to end-users for better performance.
+
+AWS Shield which protects against Distributed Denial of Service (DDoS) attacks is available globally on Amazon CloudFront Edge Locations.
+Amazon GuardDuty is a threat detection service that continuously monitors your AWS accounts and workloads for malicious activity and delivers detailed security findings for visibility and remediation.
+Amazon Detective automatically collects log data from your AWS resources and uses machine learning, statistical analysis, and graph theory to build a linked set of data that enables you to easily conduct faster and more efficient security investigations - but does not actively detect threats.
+
+
