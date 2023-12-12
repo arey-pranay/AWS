@@ -84,4 +84,45 @@ AWS Shield which protects against Distributed Denial of Service (DDoS) attacks i
 Amazon GuardDuty is a threat detection service that continuously monitors your AWS accounts and workloads for malicious activity and delivers detailed security findings for visibility and remediation.
 Amazon Detective automatically collects log data from your AWS resources and uses machine learning, statistical analysis, and graph theory to build a linked set of data that enables you to easily conduct faster and more efficient security investigations - but does not actively detect threats.
 
+Amazon Simple Queue Service (SQS) is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications.
+Amazon Simple Workflow Service (SWF) helps developers build, run, and scale background jobs that have parallel or sequential steps, and is a fully managed state tracker and task coordinator in the Cloud.
+
+AWS CodeStar provides a unified interface for managing software development activities in one place.
+AWS CodeCommit is a source control service hosted by AWS for privately storing and managing assets in the cloud
+
+AWS Transit Gateway connects your Amazon Virtual Private Clouds (VPCs) and on-premises networks through a central hub. 
+AWS PrivateLink provides private connectivity between VPCs, AWS services, and your on-premises networks, it doesn’t do this across multiple regions.
+Amazon Connect is a cloud-based telecommunications service providing managed cloud-based customer contact centers - and has nothing to do connecting VPCs.
+Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web service and can also be used to register domain names.
+
+AWS Systems Manager gives you visibility and control of your infrastructure on AWS.
+AWS Config is a fully-managed service that provides you with an AWS resource inventory, configuration history, and configuration change notifications to enable security and regulatory compliance.
+AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet.
+Amazon CloudWatch is a monitoring service for AWS cloud resources and the applications you run on AWS. You use CloudWatch for performance monitoring, not automating operational tasks.
+
+Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily. Amazon Cognito scales to millions of users and supports sign-in with social identity providers, such as Apple, Facebook, Google, and Amazon, and enterprise identity providers via SAML 2.0 and OpenID Connect.
+
+Auto Scaling is not responsible for distributing connections to EC2 instances, that is a job for an Elastic Load Balancer (ELB).
+
+Amazon MemoryDB for Redis is a Redis-compatible, in-memory database service built on Redis architecture, which offers sub-millisecond latency
+
+Global Accelerator is used to direct traffic to application endpoints in different Regions using the AWS global network. It does not cache content and would not be used in front of an S3 bucket.
+
+On-demand, Reserved and Spot Amazon EC2 Linux instances are charged per second with a minimum charge of 1 minute. Therefore, as the minimum has been exceeded, exactly 4hrs, 5mins and 6 seconds will be charged.
+
+By using Tags, you can apply metadata to application components aligning each component to an application. You can then filter based on these tags within AWS Cost Explorer to see easily how much each application costs. This is the easiest way to achieve the requirements out of the options.
+
+Access to the ports on an Amazon EC2 instance is controlled through security groups. AWS Trusted Advisor scans the security groups in your account to see if any security groups allow unrestricted access to any ports. 
+VPC Flow Logs capture information about the IP traffic going to and from network interfaces in your VPC.
+CloudWatch Logs captures logging information from applications and AWS services.
+
+Only the Enterprise Support plan gets a Technical Account Manager (TAM).
+You do not get an AWS Solutions Architect with any plan.
+Cloud Support Associates are provided in the Developer plan.
+There’s no such thing as a Technical Support Manager in the AWS support plans.
+
+With AWS Snowmobile you can move 100PB per snowmobile. AWS call this an “Exabyte-scale data transfer service”.
+With AWS Snowball you can move up to 80TB per device. AWS call this a “petabyte-scale data transfer service”.
+S3 Transfer Acceleration is meant speed up uploads to Amazon S3 but would not be used for exabytes of data.
+S3 Cross-Region Replication is used for copying data between regions, not into AWS. It is also unsuitable for moving such as huge amount of data.
 
