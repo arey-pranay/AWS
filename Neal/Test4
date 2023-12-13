@@ -1,0 +1,204 @@
+Reserved instances allow a customer to use on-demand EC2 instances at a discounted price based on a commitment of usage.
+On-demand instances are the most expensive, and the default billing option for EC2 instances.
+Spot Instances are not suitable as spot instances let you take advantage of unused EC2 capacity in the AWS cloud, which can be terminated at a 2-minute notice if AWS requires the capacity for on-demand customers.
+
+ECS is a managed container service, which would only work for migrating specific containerized workloads - not for general migrations.
+
+Amazon Connect is a cloud-based telecommunications service providing managed cloud-based customer contact centers.
+Amazon Workspaces is a fully managed desktop virtualization service for Windows and Linux that enables you to access resources from any supported device.
+To secure your network you would use the AWS Site-to-Site VPN. AWS Site-to-Site VPN allows you to encrypt traffic across your networks.
+
+Amazon Simple Queue Service (SQS) and Amazon Step Functions both provide asynchronous integration. SQS provides a durable message bus and Step Functions is an orchestrated workflow service.
+AWS Route 53 is a DNS service that resolves domain names to IP addresses.
+
+CloudWatch Logs Insights enables you to interactively search and analyze your log data in Amazon CloudWatch Logs.
+Amazon EventBridge is a serverless event bus that ingests data from your own apps, SaaS apps and AWS services and routes that data to targets.
+A log stream is a sequence of log events that share the same source. Each separate source of logs in CloudWatch Logs makes up a separate log stream. This does not utilize queries.
+When you enable anomaly detection for a metric, CloudWatch applies statistical and machine learning algorithms. These algorithms continuously analyze metrics of systems and applications, determine normal baselines, and surface anomalies with minimal user intervention.
+
+AWS Enterprise Support is a support plan which provides a less than 15 minutes response time for business-critical system failure, and AWS Enterprise On-Ramp provides a less than 30 minutes response time for business-critical system failure.
+AWS Developer Support is a support plan which provides a less than 12-hour response time for system impaired cases
+AWS Business Support is a support plan which provides a less than 1 hour response time for production system impaired cases and has no guarantee on business-critical system down.
+
+Data stored within an AWS region is not replicated outside of that region automatically. It is up to customers of AWS to determine whether they want to replicate their data to other regions. You must always consider compliance and network latency when making this decision.
+
+Consolidated billing has the following benefits:
+• One bill – You get one bill for multiple accounts.
+• Easy tracking – You can track the charges across multiple accounts and download the combined cost and usage data.
+• Combined usage – You can combine the usage across all accounts in the organization to share the volume pricing discounts, Reserved Instance discounts, and Savings Plans. This can result in a lower charge for your project, department, or company than with individual standalone accounts.
+• No extra fee – Consolidated billing is offered at no additional cost.
+
+Service control policies (SCPs) are used for controlling the API actions you can use, not for lowering costs.
+
+The operational excellence pillar focuses on running and monitoring systems, and continually improving processes and procedures. Key topics include automating changes, responding to events, and defining standards to manage daily operations, and it does not include initial resilience and recovery of workloads.
+The performance efficiency pillar focuses on structured and streamlined allocation of IT and computing resources. Key topics include selecting resource types and sizes optimized for workload requirements, monitoring performance, and maintaining efficiency as business needs evolve.
+Security simply refers to the ability to ensure your workloads and infrastructure are safe from attack or from exploitation.
+The Reliability pillar encompasses the ability of a workload to perform its intended function correctly and consistently when it's expected to. This includes the ability to operate and test the workload through its total lifecycle.
+
+Security of the virtualization layer comes down to the responsibility of AWS, as the AWS customer has no insight into this layer within the physical infrastructure.
+Patching the operating system on Amazon RDS instances is AWS’s responsibility as Amazon RDS is a managed service.
+Amazon EC2 instance is an Infrastructure as a Service tool, in which you simply have direct access to the underlying virtual machine. Therefore it is your responsibility to patch the operating system on any EC2 instance you use.
+
+Amazon Redshift uses SQL to analyze structured and semi-structured data across data warehouses, operational databases, and data lakes, using AWS-designed hardware and machine learning to deliver the best price performance at any scale.
+Data warehouses are built on databases designed for online analytics processing (OLAP) use cases.
+
+Amazon Athena is a serverless query service which you can use to query S3 using standard SQL.
+Amazon EMR is a cloud big data platform for running large-scale distributed data processing jobs, interactive SQL queries, and machine learning (ML) applications using open-source analytics frameworks such as Apache Spark, Apache Hive, and Presto.
+RDS is typically used as an online transaction processing (OLTP) database rather than an OLAP database.
+
+AWS CloudFormation is an Infrastructure as Code (IaC) tool which allows users to provision infrastructure services using either JSON or YAML. With AWS CloudFormation you can easily provision resources in a different Region easily.
+AWS CodeStar is a cloud‑based development service that provides the tools you need to quickly develop, build, and deploy applications on AWS.
+AMIs are Region specific.
+AWS Systems Manager can be used for automation of management tasks, such as creating Amazon EC2 Amazon Machine Images (AMIs) and applying patches.
+
+Amazon QuickSight is a fast, cloud-powered business intelligence service that makes it easy to deliver insights to everyone in your organization.
+LightSail offers virtual servers (instances) that are easy to set up and backed by the power and reliability of AWS.
+Amazon Connect is an easy to use omnichannel cloud contact center that helps companies provide superior customer service at a lower cost
+
+SAP is System Analysis Program Development
+AWS Launch Wizard offers a guided way of sizing, configuring, and deploying AWS resources for third-party applications, such as SQL Server Always On and SAP, without needing to manually identify and provision individual AWS resources.
+AWS App Runner is a service that automatically builds and deploys containerized applications quickly, but it is not designed to guide the user through sizing, configuration, and deployment of applications like SQL Server Always On and SAP.
+
+The IAM console provides information about when IAM users and roles last attempted to access AWS services. This information is called service last accessed data. This data can help you identify unnecessary permissions so that you can refine your IAM policies to better adhere to the principle of “least privilege.”
+That means granting the minimum permissions required to perform a specific task. You can find the data on the Access Advisor tab in the IAM console by examining the detail view for any IAM user, group, role, or managed policy.
+
+IAM is used to securely control individual and group access to AWS resources. IAM is universal (global) and does not apply to regions.
+
+The AWS Health API is available to all Business, Enterprise On-Ramp, or Enterprise Support customers. You can use the API operations to get information about events that might affect your AWS services and resources.
+AWS DDoS Response Team (DRT) is not available through a support plan, but through the AWS Shield Advanced service.
+You get a dedicated AWS TAM when you have Enterprise Support, and you get access to a pool of TAMs when you are using Enterprise On-Ramp.
+AWS Support concierge is only available to Enterprise Support customers.
+
+Facility operations and hardware procurement costs are something you no longer need to pay for in the AWS Cloud. These factors therefore must be included as an on-premise cost so you can understand the cost of staying in your own data centers.
+Database administration, operating system licensing and application licensing will still be required in the AWS Cloud.
+
+Included as part of the Enterprise Support plan, the Support Concierge Team are AWS billing and account experts that specialize in working with enterprise accounts.
+
+Amazon SageMaker is a managed Machine Learning service. With Amazon SageMaker, you can package your own algorithms that can then be trained and deployed in the SageMaker environment.
+
+A VPC endpoint enables users to privately connect their VPC to supported AWS services.
+AWS PrivateLink provides private connectivity between VPCs, AWS services, and your on-premises networks, without exposing your traffic to the public internet.
+
+Amazon ElastiCache provides in-memory caching which improves performance for read requests when the data is cached in ElastiCache. ElastiCache can be placed in front of your database.
+
+To perform a TCO you need to document all of the costs you’re incurring today to run your IT operations. That includes facilities equipment installation and data center security costs. That way you get to compare the full cost of running your IT on-premises today, to running it in the cloud.
+
+Security and compliance are shared responsibilities between AWS and the customer. Depending on the services deployed, this shared model can help relieve the customer’s operational burden. 
+
+Amazon CloudFront is a content delivery network (CDN) service that helps you distribute your static and dynamic content quickly and reliably with high speed globally.
+Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web service which is also deployed globally.
+
+You launch EC2 instances within an Availability Zone, not globally.
+A VPC is a regional construct which spans all the Availability Zones within a Region.
+You also choose to launch RDS instances within an Availability Zone, not globally.
+
+The Business support plan provides a service level agreement (SLA) of < 1 hour for production system down support cases.
+The dedicated TAM, concierge support team and business-critical system down support only come with the Enterprise support plan.
+
+Amazon S3 is an object-based storage system that is accessed using a RESTful API over HTTP(S). It consists of buckets, which are root level folders, and objects, which are the files, images etc. that you upload
+
+AWS Direct Connect is a low-latency, high-bandwidth, private connection to AWS. This can be used to create a private hybrid cloud connection between on-premises and the AWS Cloud.
+An AWS VPC Endpoint is a PrivateLink connection that connects an AWS public service to a VPC using a private connection. This does not connect on-premises environments to AWS.
+
+Amazon Detective automatically collects log data from your AWS resources and uses machine learning, statistical analysis, and graph theory to build a linked set of data that enables you to easily conduct faster and more efficient security investigations. It does not however track API calls within an account.
+Inspector is a fully managed vulnerability assessment tool, which doesn’t track who is performing what actions within an account.
+AWS Trusted Advisor provides recommendations that help you follow AWS best practices. Trusted Advisor evaluates your account by using checks. These checks identify ways to optimize your AWS infrastructure, improve security and performance, reduce costs, and monitor service quotas. You can then follow the check recommendations to optimize your services and resources.
+AWS CloudTrail tracks API calls that are made within a particular AWS account. it will track the API call made, the IP address it originated from and which IAM principal initiated the action.
+
+AWS Audit Manager assists organizations in continuously auditing their AWS usage, facilitating risk assessment and compliance with various regulations and industry standards.
+AWS Config helps in evaluating and auditing configurations of AWS resources.
+AWS Trusted Advisor provides best practice recommendations to help you follow AWS architectural guidance, but it doesn't offer features specifically designed to continuously audit AWS usage in terms of risk and compliance with regulatory standards.
+AWS Artifact is more about providing on-demand access to AWS' security and compliance reports and select online agreements, rather than helping in the continuous auditing of AWS usage considering risk and compliance assessments.
+
+Amazon Kendra is a highly accurate and easy-to-use enterprise search service powered by machine learning. It provides natural language search capabilities, meaning that users can ask questions using everyday language and Kendra will find the precise answers in the document set.
+Amazon Comprehend is a natural language processing (NLP) service that uses machine learning to analyze text documents, but it does not offer search capabilities to find precise answers to natural language queries across a large set of documents.
+Amazon Lex is a service for building conversational interfaces using voice and text, rather than a search service designed to find specific answers in a large document set using natural language queries.
+Amazon ElasticSearch is a search and analytics engine, it does not natively offer the natural language processing and machine learning capabilities required to find precise answers to natural language questions in a set of documents; it is generally used for log analytics and other application monitoring purposes.
+
+AWS Application Discovery Service helps you plan your migration to the AWS cloud by collecting usage and configuration data about your on-premises servers.
+You can use resource groups to organize your AWS resources. AWS Resource Groups is the service that lets you manage and automate tasks on large numbers of resources at one time.
+AWS Service Catalog allows organizations to create and manage catalogs of IT services that are approved for use on AWS and is not related to migration.
+AWS Systems Manager provides an operations console and APIs for centralized application and resource management in hybrid environments. It is not a tool related to migration.
+
+AWS CloudTrail tracks API calls that are made within a particular AWS account. it will track the API call made, the IP address it originated from and which IAM principal initiated the action and in this case will capture who stopped an EC2 instance.
+Inspector is a fully managed vulnerability assessment tool and does not investigate who initiated any API call.
+Amazon CloudWatch is a monitoring and observability service which does not track API calls made within the account.
+VPC Flow Logs is a feature that enables you to capture information about the IP traffic going to and from network interfaces in your VPC.
+
+AWS Compute Optimizer leverages machine learning to analyze the historical usage patterns of your workloads, helping you to identify the most optimal AWS resources, reducing costs, and enhancing performance.
+
+You can also use AWS Budgets to set reservation utilization or coverage targets and receive alerts when your utilization drops below the threshold you define. Reservation alerts are supported for Amazon EC2, Amazon RDS, Amazon Redshift, Amazon ElastiCache, and Amazon Elasticsearch reservations.
+
+Fully managed services reduce your operational overhead as AWS manage not just the infrastructure layer but the service layers above it. Examples are Amazon Aurora and Amazon ElastiCache where the database is managed for you.
+
+Customers are responsible for configuring their own IAM password policies and installing operating system patches on Amazon EC2 instances.
+AWS are responsible for installing patches on physical hardware devices, data center access controls and secure disposal of disk drives.
+
+In IAM, a user can be a member of multiple groups. One IAM user can be a part of a maximum of 5 groups. Also Groups are a flat hierarchy of users with similar permissions, and you cannot place a group within another group.
+
+An IAM user is an entity that represents a person or service. Users can be assigned an access key ID and secret access key for programmatic access to the AWS API, CLI, SDK, and other development tools and a password for access to the management console.
+Key pairs are used with Amazon EC2 as a method of using public key encryption to securely access EC2 instances.
+
+The AWS Security Token Service (STS) is a web service that enables you to request temporary, limited-privilege credentials for IAM users or for users that you authenticate (federated users)
+
+AWS customers are welcome to carry out security assessments or penetration tests against their AWS infrastructure without prior approval for the following eight services:
+• Amazon EC2 instances, NAT Gateways, and Elastic Load Balancers.
+• Amazon RDS.
+• Amazon CloudFront.
+• Amazon Aurora.
+• Amazon API Gateways.
+•  AWS Lambda and Lambda Edge functions.
+• Amazon LightSail resources.
+• Amazon Elastic Beanstalk environments.
+
+Amazon FSx for Windows File Server provides fully managed Microsoft Windows file servers, backed by a fully native Windows file system.
+Amazon S3 is an object storage service, and does not use the SMB protocol.
+Amazon Elastic File System (Amazon EFS) is a file, it is a Linux based file system which uses the NFS protocol, not the SMB like a Windows server.
+Amazon Elastic Block Store (Amazon EBS) is a block-based storage system, not a file-based storage system. SMB is a file-based storage protocol.
+
+Per-Core. An Amazon EC2 Dedicated Host is a physical server fully dedicated for your use, so you can help address corporate compliance requirements.
+On-Demand Instances is a standard pricing model and does not offer the advantages requested.
+Spot Instances is used to obtain discounted pricing for short-term requirements that can be interrupted.
+Reserved Instances is used to lower cost by reserving usage of an instance for a term of 1 or 3 years.
+
+Amazon CloudFront is a content delivery network (CDN) that caches content at Edge Locations around the world. This gets the content closer to users which improves performance.
+Edge location. A site that CloudFront uses to cache copies of your content for faster delivery to users at any location.
+
+AWS LightSail is a compute service that offers a lower cost and easier to use alternative to Amazon EC2.
+
+Amazon Connect is a self-service, cloud-based contact center service that makes it easy for any business to deliver better customer service at lower cost.
+
+Amazon ElastiCache is a caching service for databases. Though it does improve read performance for database queries, it is not a global service that is designed to improve performance for users around the world.
+
+The company is responsible for enabling encryption on the bucket because the customer is responsible for the data within the bucket, and the way it is protected using things like Bucket Policies, permissions, and encryption.
+Managing the infrastructure that runs the S3 bucket, Managing the data in transit, and Managing the operating system updates on the S3 bucket are AWS responsibilities.
+
+You don’t need to do anything except start deploying resources in the new region. With the AWS cloud you can use any region around the world at any time. There is no need for a separate account, and IAM is a global service.
+
+AWS Secrets Manager helps you protect secrets needed to access your applications, services, and IT resources. The service enables you to easily rotate, manage, and retrieve database credentials, API keys, and other secrets throughout their lifecycle. Users and applications retrieve secrets with a call to Secrets Manager APIs, eliminating the need to hardcode sensitive information in plain text.
+
+EFS is a fully-managed service that makes it easy to set up and scale file storage in the Amazon Cloud. EFS uses the NFSv4.1 protocol. Can concurrently connect 1 to 1000s of EC2 instances, from multiple AZs.
+Amazon Instance Store is a type of ephemeral block-based volume that can be attached to a single EC2 instance at a time.
+EBS volumes can only be attached to a single EC2 instance at a time and are block devices (not NFS).
+Amazon S3 is an object store and is connected to using a RESTful protocol over HTTP.
+
+AWS organizations allow you to consolidate multiple AWS accounts into an organization that you create and centrally manage. Unused reserved instances (RIs) for EC2 are applied across the group so the organization can utilize their unused reserved instance instead of consuming on-demand instances which will lower their costs.
+Spot instance pricing is variable so it is not guaranteed to lower the cost and it is not suitable for workloads that cannot be unexpectedly terminated by AWS. You cannot redeem your reserved instances. You can sell them on the AWS marketplace, however. Using placement groups will not lower their costs.
+
+Amazon RDS for SQL Server is a fully managed SQL database service which you can migrate your on-premises database into. You do not need to refactor or change your on-premises database and you can perform homogeneous migrations with ease.
+RedShift is a data warehousing solution which would not accept a migration using SQL Server.
+DynamoDB is a No-SQL database that is not suitable for a direct 1-1 migration from an SQL database without schema conversion.
+
+AWS CloudHSM is a cloud-based hardware security module (HSM) that enables you to easily generate and use your own encryption keys on the AWS Cloud
+
+The AWS Storage Gateway service enables hybrid cloud storage between on-premises environments and the AWS Cloud. It seamlessly integrates on-premises enterprise applications and workflows with Amazon’s block and object cloud storage services through industry standard storage protocols.
+
+Inspector is a fully managed vulnerability assessment tool - it doesn’t detect threat.
+
+You can monitor your estimated AWS charges by using Amazon CloudWatch. When you enable the monitoring of estimated charges for your AWS account, the estimated charges are calculated and sent several times daily to CloudWatch as metric data.
+Billing metric data is stored in the US East (N. Virginia) Region and represents worldwide charges. This data includes the estimated charges for every service in AWS that you use, in addition to the estimated overall total of your AWS charges.
+The alarm triggers when your account billing exceeds the threshold you specify. It triggers only when actual billing exceeds the threshold. It doesn't use projections based on your usage so far in the month.
+
+CloudTrail logs API activity, not performance or billing metrics.
+Amazon QuickSight is a fast, cloud-powered business intelligence service that makes it easy to deliver insights to everyone in your organization.
+AWS Trusted Advisor is an online tool that provides you real time guidance to help you provision your resources following AWS best practices.
