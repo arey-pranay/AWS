@@ -53,3 +53,87 @@ Jenkins is a Continuous Integration tool but is not an AWS service.
 
 AWS Web Application Firewall (AWS WAF) integrates with AWS Firewall Manager and you can manage it using Firewall Manager, by itself it is not a centralized solution to manage firewall rules across various AWS accounts and VPCs.
 AWS Firewall Manager allows you to centrally configure and manage firewall rules across your accounts and applications in AWS Organization, helping to set up AWS WAF, AWS Shield Advanced, and AWS Network Firewall rules. AWS Network Firewall is a managed service that makes it easy to deploy essential network protections for all your Amazon VPCs.
+
+Using IAM roles instead of storing credentials within EC2 instances is more secure It is also easier to manage roles.
+You cannot apply multiple roles to a single instance. Role credentials are temporary, not permanent, and are rotated automatically.
+
+AWS Lambda is a compute service for running code as functions.
+Amazon LightSail is a compute service for running instances.
+Amazon Simple Queue Service (SQS) is a message bus for temporarily storing data that is being passed between application components.
+
+You can restore an Amazon RDS database instance to a specific point in time with a granularity of 5 minutes. Amazon RDS uses transaction logs which it uploads to Amazon S3 to do this.
+Incremental backup describes taking a backup of items that have changed since the last backup.
+
+The TCO calculator asks for the number of servers (Physical or VMs) you are running on-premises. You also need to supply the resource information (CPU, RAM) and specify whether the server is a DB or non-DB.
+You don’t need to specify the number of storage systems, you just need to specify the raw capacity.
+
+AWS Lambda and Amazon API Gateway are both app-facing components of the AWS Serverless infrastructure.
+AWS Step Functions is an orchestration service.
+Amazon DynamoDB is a serverless database service. Databases are backend, not app-facing.
+Typically, EFS is mounted by Amazon EC2 instances.
+
+Amazon ECS is used for running software containers such as Docker containers.
+Amazon EKS is used for managing software containers such as Docker containers.
+AWS CodeCommit is a fully-managed source control service that hosts secure Git-based repositories.
+
+You can create one or more subnets within each availability zone but subnets cannot span across availability zones.
+Subnets  are contained and created within one Availibility ZOne (AZ).
+
+You can manage AWS Identity and Access Management identities through the AWS Management Console, AWS Command Line Tools, AWS SDKs, and IAM HTTPS API.
+Amazon WorkSpaces is a managed desktop computing service running on the AWS cloud.
+
+You can use an AWS Direct Connect gateway to connect your AWS Direct Connect connection over a private virtual interface to one or more VPCs
+AWS Managed VPN uses the public Internet and is therefore not a private connection.
+Inter-Region VPC peering does not help you to connect from an on-premise network.
+Amazon CloudFront is a content delivery network used for caching data.
+
+Amazon MQ is a managed message broker service for Apache ActiveMQ that makes it easy to set up and operate message brokers in the cloud.
+
+Amazon SageMaker is a fully-managed platform that enables developers and data scientists to quickly and easily build, train, and deploy machine learning models at any scale. Amazon Rekognition makes it easy to add image and video analysis to your applications. Amazon Comprehend is a natural language processing (NLP) service that uses machine learning to find insights and relationships in text.
+
+Amazon Web Services Web Application Firewall (AWS WAF) is used for protecting web applications and APIs against malicious attacks. 
+Amazon GuardDuty is used for continuously monitoring AWS resources for threats. It is not a DDoS prevention service, it uses machine learning and anomaly detection to identify security vulnerabilities in resources.
+
+When you deploy an application across multiple Availability Zones the application can be considered to be highly available. You must also have a way of directing traffic to the application in each AZ such as an Elastic Load Balancer.
+Deploying applications into different regions results daving global reach.
+
+AWS Artifact is your go-to, central resource for compliance-related information that matters to you. It provides on-demand access to AWS’ security and compliance reports and select online agreements.
+
+APN Consulting Partners are professional services firms that help customers of all sizes design, architect, build, migrate, and manage their workloads and applications on AWS. Consulting Partners include System Integrators (SIs), Strategic Consultancies, Agencies, Managed Service Providers (MSPs), and Value-Added Resellers (VARs).
+
+Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache for DynamoDB that delivers up to a 10x performance improvement – from milliseconds to microseconds – even at millions of requests per second.
+Amazon ElastiCache is also an in-memory cache but it is not a feature of DynamoDB.
+
+
+Amazon EBS encryption offers a straight-forward encryption solution for your EBS resources that doesn't require you to build, maintain, and secure your own key management infrastructure. 
+It uses AWS Key Management Service (AWS KMS) customer master keys (CMK) when creating encrypted volumes and snapshots.
+Encryption operations occur on the servers that host EC2 instances, ensuring the security of both data-at-rest and data-in-transit between an instance and its attached EBS storage.
+All volumes (including root and non-root) can now be encrypted at launch time and it’s possible to set this as the default setting.
+
+Replication enables automatic, asynchronous copying of objects across Amazon S3 buckets. Buckets that are configured for object replication can be owned by the same AWS account or by different accounts. You can copy objects between different AWS Regions or within the same Region.
+Both source and destination buckets must have versioning enabled. 
+
+AWS IoT Core is a managed cloud service that lets connected devices easily and securely interact with cloud applications and other devices. AWS IoT Core can support billions of devices and trillions of messages, and can process and route those messages to AWS endpoints and to other devices reliably and securely.
+AWS Directory Service for Microsoft Active Directory, also known as AWS Managed Microsoft AD, enables your directory-aware workloads and AWS resources to use managed Active Directory in the AWS Cloud
+Amazon WorkSpaces is a managed, secure cloud desktop service.
+AWS Server Migration Service (SMS) is an agentless service which makes it easier and faster for you to migrate thousands of on-premises workloads to AWS.
+
+AWS provide volume based discount so that when you use more services you reduce the cost per service. 
+You can also reserve capacity by locking in to fixed 1 or 3 year contracts to get significant discounts
+You never pay for inbound data transfer
+You don’t get discounts for using a variety of services, only when you use more services
+There are never termination fees with AWS
+
+There are five design principles for reliability in the cloud:
+• Test recovery procedures
+• Automatically recover from failure
+• Scale horizontally to increase aggregate system availability
+• Stop guessing capacity
+• Manage change in automation
+
+With AWS organizations you create a paying account and linked accounts. One bill is provided for multiple accounts within an organization. Volume pricing discounts can be applied across resources in multiple accounts.
+one bill is provided for multiple accounts within an organization. CloudTrail is on a per account basis and per region basis but can be aggregated into a single bucket in the paying account.
+
+With the Developer plan you can open unlimited cases. You can also open unlimited cases with the Business and Enterprise plans but these are more expensive. You cannot open any support cases with the basic support plan.
+
+Amazon FSx is the correct answer because it offers fully managed third-party file systems, including Windows File Server and Lustre, giving users native compatibility and a feature-rich experience, thereby facilitating the use of these file systems with a wide variety of AWS services.
