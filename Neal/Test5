@@ -1,0 +1,55 @@
+You can use Amazon CloudWatch Logs to monitor, store, and access your log files from Amazon Elastic Compute Cloud (Amazon EC2) instances, AWS CloudTrail, Route 53, and other sources. You can then retrieve the associated log data from CloudWatch Logs.
+AWS CloudTrail is used for recording a history of API actions taken on your account.
+OpsWorks is a configuration management service.
+Amazon Kinesis is a set of services used for collecting, processing and analyzing streaming data.
+
+Where possible, you should replace EC2 workloads with AWS managed services that don’t require you to take any capacity decisions. AWS Lambda is a serverless services and you only pay for actual processing time. Other examples of services that you don’t need to make capacity decisions with include: ELB, CloudFront, SQS, Kinesis Firehose, SES, and CloudSearch.
+Deploying resources with CloudFormation is great for consistently deploying application configurations from a template. However, this is not an example of cost optimization
+
+Amazon Elastic Load Balancing is used to spread load and introduce fault tolerance by distributing connections across multiple identically configured back-end EC2 instances.
+Amazon CloudFront is a content delivery network that is used for caching content and serving it to web-based users quickly.
+Amazon ElastiCache is an in-memory database cache and is used to introduce improved performance rather than fault tolerance.
+DynamoDB is fault tolerant; however, it is not something you add to an architecture to introduce fault tolerance to the application stack.
+
+Access keys are long-term credentials for an IAM user or the AWS account root user. You can use access keys to sign programmatic requests to the AWS CLI or AWS API (directly or using the AWS SDK).
+Access keys consist of two parts: an access key ID (for example, AKIAIOSFODNN7EXAMPLE) and a secret access key (for example, wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY).
+
+With cloud computing you no longer need to guess about capacity as you can elastically scale. This means you don’t end up overprovisioning but instead react to the load on your servers. You can also be faster and more agile with development and release of applications.
+AWS runs the infrastructure but you still manage the application. You still need to patch your own operating systems.  The cloud is centralized so you won’t necessarily bring services closer to your end users.
+
+With AWS Lambda you don’t have any servers to manage (serverless). Lambda functions scale out rather than up running multiple invocations of the function in parallel.
+AWS Lambda is strictly AWS proprietary not any open source software...
+
+Elastic IP addresses are for use in a specific region only and can therefore only be remapped between instances within that region. You can use Elastic IP addresses to mask the failure of an instance in one Availability Zone by rapidly remapping the address to an instance in another Availability Zone.
+Edge Locations are used by CloudFront and are not places where you can run EC2 instances.
+DB subnets (groups) are used by the RDS relational database service and are not used for running EC2 instances.
+
+Cross-Region replication (CRR) is used to copy objects across Amazon S3 buckets in different AWS Regions. The only option here that will help is to use CRR to copy the data to another region. This will provide disaster recovery.
+Moving to Glacier, or also to another S3 storage class does not copy the data out of the region.
+
+
+Amazon EC2 Dedicated Hosts allow you to use your eligible software licenses from vendors such as Microsoft and Oracle on Amazon EC2, so that you get the flexibility and cost effectiveness of using your own licenses, but with the resiliency, simplicity and elasticity of AWS. 
+
+Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache for DynamoDB that delivers up to a 10x performance improvement – from milliseconds to microseconds – even at millions of requests per second.
+Amazon Simple Queue Service (SQS) is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications.
+Amazon Elastic File System (Amazon EFS) provides a simple, scalable, elastic file system for Linux-based workloads
+
+Amazon Aurora Global Database is designed for globally distributed applications, allowing a single Amazon Aurora database to span multiple AWS regions. This is a way to have an SQL database across regions, which is not a good use case for hosting media files.
+
+Amazon DynamoDB stores items, not objects, based on key, value pairs. Amazon EBS is a block-based storage system.. Amazon EFS is a file-based storage system.
+Amazon Simple Storage Service is storage for the Internet. It is designed to make web-scale computing easier for developers. Amazon S3 is an object-based storage system that stores objects that are comprised of key, value pairs.
+
+Elastic Beanstalk can be used to easily deploy certain web applications. However, you still need to supply the code and it is limited to EC2 instances.
+Quick Starts are built by AWS solutions architects and partners to help you deploy popular technologies on AWS, based on AWS best practices for security and high availability. 
+
+A Network ACL is a firewall that is associated with a subnet within your VPC. It is used to filter the network traffic that enters and exits the subnet.
+A Security Group is a firewall that is associated with an EC2 instances (not the subnet). Security Groups control the traffic the inbound and outbound network traffic from/to the instance.
+An IAM Policy is used to assign permissions to users and roles. A Bucket Policy is used with Amazon S3 buckets to control access.
+
+AWS CloudFormation is a service that gives developers and businesses an easy way to create a collection of related AWS resources and provision them in an orderly and predictable fashion. AWS CloudFormation provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. Think of CloudFormation as deploying infrastructure as code.
+Elastic Beanstalk is more focused on deploying applications on EC2 (PaaS).
+AWS CodeDeploy is a fully managed deployment service that automates software deployments to a variety of compute services such as Amazon EC2, AWS Lambda, and your on-premises servers.
+Jenkins is a Continuous Integration tool but is not an AWS service.
+
+AWS Web Application Firewall (AWS WAF) integrates with AWS Firewall Manager and you can manage it using Firewall Manager, by itself it is not a centralized solution to manage firewall rules across various AWS accounts and VPCs.
+AWS Firewall Manager allows you to centrally configure and manage firewall rules across your accounts and applications in AWS Organization, helping to set up AWS WAF, AWS Shield Advanced, and AWS Network Firewall rules. AWS Network Firewall is a managed service that makes it easy to deploy essential network protections for all your Amazon VPCs.
