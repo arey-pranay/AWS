@@ -138,3 +138,42 @@ With the Developer plan you can open unlimited cases. You can also open unlimite
 
 Amazon FSx is the correct answer because it offers fully managed third-party file systems, including Windows File Server and Lustre, giving users native compatibility and a feature-rich experience, thereby facilitating the use of these file systems with a wide variety of AWS services.
 
+AWS customers must protect their AWS services through policies, encryption, and firewall rules.
+Adding firewall rules to security groups and network ACLs, Applying encryption to data stored on an EBS volume, and Applying bucket policies to share Amazon S3 data are customer reponsibilities.
+Installing firmware updates on host servers is AWS responsibilty.
+
+Edge locations are Content Delivery Network (CDN) endpoints for CloudFront. There are many more edge locations than regions.
+
+AZ’s have direct, low-latency, high throughput and redundant network connections between each other.
+Each AZ is designed as an independent failure zone.
+AZs are physically separated within a typical metropolitan region and are located in lower risk flood plains
+Subnets are created within a single AZ and do not get mapped to multiple AZs.
+
+Amazon S3 is an object-based storage system. It can be used to store data such as files and images that need to be served. Optionally, an S3 bucket can be configured as a static website. Amazon CloudFront is a content delivery network (CDN) that caches content at Edge Locations around the world.
+These two services can work together with an S3 bucket configured as an origin for the CloudFront distribution. Users around the world will then be able to pull the content from the local Edge Location with lower latency and better performance.
+
+ElastiCache caches data from a database in-memory.
+
+An Amazon Machine Image (AMI) provides the information required to launch an instance. You can use an AMI to launch identical instances from a standard template. This is also known as a Golden Image (though no such feature exists in AWS with this name). 
+An AMI is created from an EBS snapshot and also includes launch permissions and a block device mapping.
+
+Amazon LightSail provides an easy, low cost way to consume cloud services without needing the skill set for using VPC resources. 
+The product set includes virtual private servers (instances), managed MySQL databases, block and object storage, simplified load balancers, and CDN distributions.
+
+When you create IAM policies, follow the standard security advice of granting least privilege—that is, granting only the permissions required to perform a task. 
+
+An Amazon EC2 Dedicated Host is a physical server with EC2 instance capacity fully dedicated to your use. 
+Dedicated Hosts allow you to use your existing per-socket, per-core, or per-VM software licenses, including Windows Server, Microsoft SQL Server, SUSE, Linux Enterprise Server, and so on.
+
+EC2 Dedicated Instances are Amazon EC2 instances that run in a VPC on hardware that’s dedicated to a single customer. Bring your own licensing (BYOL) is not supported for dedicated instances.
+
+Spot instances allow you to bid in the marketplace for EC2 instances to reduce cost, they do not allow BYOL.
+Reserved instances allow you to reduce on-demand price by up to 70% by committing to a 1- or 3-year term.
+
+AWS Resource Access Manager (AWS RAM) is designed to enable you to securely share your AWS resources with any AWS account.
+AWS Service Catalog is used to create and manage catalogs of IT services that are approved for use on AWS, allowing organizations to manage catalogs of IT services and resources.
+
+The public cloud is offered under a purely pay as you go model (unless you choose to reserve), and allows companies to completely avoid CAPEX costs.'
+Private and on-premise clouds are essentially the same, though both could be managed by a third party and even could be delivered under an OPEX model by some vendors.
+However, they are typically more CAPEX heavy and the elasticity is limited.
+A hybrid model combines public and private and this company wants to go all in on a single model.
