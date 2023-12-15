@@ -177,3 +177,44 @@ The public cloud is offered under a purely pay as you go model (unless you choos
 Private and on-premise clouds are essentially the same, though both could be managed by a third party and even could be delivered under an OPEX model by some vendors.
 However, they are typically more CAPEX heavy and the elasticity is limited.
 A hybrid model combines public and private and this company wants to go all in on a single model.
+
+
+Amazon Elastic Container Registry (ECR) is a fully-managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images.
+
+AWS Elastic Beanstalk can be used to quickly deploy and manage applications in the AWS Cloud.  
+You can upload code directly using a ZIP or WAR file. You can also use a Git archive.
+AWS CodeDeploy is a fully managed deployment service that automates software deployments to a variety of compute services such as Amazon EC2, AWS Lambda, and on-premises servers.
+AWS CodeCommit is a fully-managed source control service that hosts secure Git-based repositories. It does not actually automate the build of the code or infrastructure on which it runs.
+
+Amazon Route 53 health checks monitor the health and performance of your web applications, web servers, and other resources.
+
+To enable automatic patching for the instances using the Amazon RDS console is the most efficient way to apply security patches on Ammazon RDS.
+Systems Manager can be used to manage EC2 instances but it cannot be used to patch RDS instances.
+
+With the standard storage class you pay a per GB/month storage fee, and data transfer out (egress) of S3. Standard-IA and One Zone-IA have a minimum capacity charge per object. 
+Standard-IA, One Zone-IA, and Glacier also have a retrieval fee. You don’t pay for data into (ingress) S3 under any storage class.
+
+Developer provides email support by the Cloud Support Associates team whereas Business and Enterprise provide email, 24×7 phone and chat access to Cloud Support Engineers. Basic does not provide email support at all.
+
+Amazon S3 Glacier is a storage service optimized for infrequently accessed data, providing extremely low-cost storage service that provides secure, durable, and flexible storage for data backup and archival. 
+AWS Elastic Disaster Recovery enables businesses to recover applications, whether they are based on premises or on the cloud, quickly and reliably while utilizing economical storage and minimum compute resources.
+
+Elastic IP addresses can be easily remapped between EC2 instances in the event of a failure. 
+Amazon Machine Images (AMIs) can be used to quickly launch replacement instances when there is a failure.
+
+An internet gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in your VPC and the internet. It therefore imposes no availability risks or bandwidth constraints on your network traffic.
+It enables Internet communications for instances in public subnets.
+
+AWS has the concept of a Region, which is a physical location around the world where we cluster data centers. We call each group of logical data centers an Availability Zone. Each AWS Region consists of multiple, isolated, and physically separate AZ's within a geographic area.
+
+Trusted Advisor is an online resource that helps to reduce cost, increase performance and improve security by optimizing your AWS environment.
+
+Amazon CloudWatch Events delivers a near real-time stream of system events that describe changes in Amazon Web Services (AWS) resources.
+
+AWS Health Dashboard provides alerts and remediation guidance when AWS is experiencing events that may impact you.
+
+ELB automatically distributes traffic across multiple EC2 instances in different AZs within a region. – High availability
+ELB is capable of handling rapid changes in network traffic patterns. – Elasticity
+
+Object lifecycle management can be used with objects so that they are stored cost effectively throughout their lifecycle. Objects can be transitioned to another storage class or expired.
+
