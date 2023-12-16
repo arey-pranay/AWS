@@ -1,0 +1,4 @@
+AWS Config can be used to track the configuration state of your resources and how the state has changed over time.
+With CloudTrail you can audit who made what API calls on what resources at what time. This can help with identifying changes that cause reliability issues.
+
+You can back up the data on your Amazon EBS volumes to Amazon S3 by taking point-in-time snapshots. 
