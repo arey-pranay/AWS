@@ -7,8 +7,8 @@ IAM is a global service and all users that are created are able to login to the 
 
 With the AWS cloud you get fine-grained billing and can turn off resources you are not using easily and not have to pay for them (pay for what you use model).
 
-AWS are responsible for networking infrastructure, updating Amazon EC2 host firmware,  edge locations, Amazon RDS instance patching, Physical security of data center facilities and compute infrastructure.
-Customers are responsible for encrypting data in transit, granting access to individuals and services, networking traffic protection, updating operating systems, Client and server-side data encryption, network and firewall configuration, and setting up server-side encryption on an Amazon S3 bucket.
+AWS are responsible for networking infrastructure, updating Amazon EC2 host firmware, Ensuring that AWS NTP (Network Time Protocol) servers are set to the correct time, Ensuring that access to data centers is restricted, Ensuring that hardware is disposed of properly, edge locations, Amazon RDS instance patching, Physical security of data center facilities and compute infrastructure.
+Customers are responsible for ensuring that application data is encrypted at rest, Ensuring that users have received security training in the use of AWS services, encrypting data in transit, granting access to individuals and services, networking traffic protection, updating operating systems, Client and server-side data encryption, network and firewall configuration, and setting up server-side encryption on an Amazon S3 bucket.
 
 When an organization leverages the AWS Cloud Adoption Framework for migrating to the cloudchief Information Officers (CIOs) and IT Architects are the primary stakeholders involved in the process
 
@@ -118,5 +118,105 @@ When you launch an instance in Amazon EC2, you have the option of passing user d
 You can pass two types of user data to Amazon EC2: shell scripts and cloud-init directives. User data is data that is supplied by the user at instance launch in the form of a script. 
 User data is limited to 16KB. User data and meta data are not encrypted. Metadata retrieves information about the instance.
 
+Amazon Redshift is a fast, fully managed data warehouse that makes it simple and cost-effective to analyze all your data using standard SQL and existing Business Intelligence (BI) tools. 
+RedShift is a SQL based data warehouse used for analytics applications.
 
+Amazon DynamoDB is a NoSQL type of database and is not suited to analytics using SQL queries.
+Amazon RDS is a transactional DB, not an analytics DB.
+Amazon S3 is an object storage solution not a database.
 
+Access keys and Server certificates are authentication options used to authenticate using AWS APIs.
+
+The six pillars of the AWS Well-Architected Framework are operation excellence, security, reliability, performance efficiency, cost optimization and sustainability. OSRPCS.
+
+You should deploy your EC2 instances across different AZs within a VPC so that if a single data center fails you still have instances available.
+
+To manage your objects so that they are stored cost effectively throughout their lifecycle, configure their Amazon S3 Lifecycle. An S3 Lifecycle configuration is a set of rules that define actions that Amazon S3 applies to a group of objects. There are two types of actions:
+• Transition actions—Define when objects transition to another storage class.
+• Expiration actions—Define when objects expire. Amazon S3 deletes expired objects on your behalf. The lifecycle expiration costs depend on when you choose to expire objects.
+
+Object sharing refers to the ability to make any object publicly available via a URL.
+Bucket policies are used for controlling access to buckets, they can’t be used to move data between storage classes.
+Versioning enabled you to automatically keep multiple versions of an object (when enabled).
+
+Amazon EC2 Spot Instances let you take advantage of unused EC2 capacity in the AWS cloud. 
+Spot Instances are available at up to a 90% discount compared to On-Demand prices. 
+When AWS need to reclaim the capacity you get a 2 minute warning and then your instances are terminated.
+With all other pricing models your instances will not be terminated by AWS once they are running.
+
+A Network Load Balancer functions at the fourth layer of the Open Systems Interconnection (OSI) model. NLBs direct connections based on information at the TCP connection level.
+Application Load Balancer (ALBs) process traffic at the application level (layer 7) based on information in the HTTP/HTTPS headers.
+Classic Load Balancer (CLBs) process traffic at the TCP, SSL, HTTP and HTTPS levels (layer 4 & 7).
+
+Amazon Simple Workflow Service (SWF) is a web service that makes it easy to coordinate work across distributed application components.
+AWS Security Token Service (STS) is used for requesting temporary credentials..
+Amazon Simple Queue Service (SQS) is a message queue used for decoupling application components.
+Amazon Simple Notification Service (SNS) is a web service that makes it easy to set up, operate, and send notifications from the cloud. SNS supports notifications over multiple transports including HTTP/HTTPS, Email/Email-JSON, SQS and SMS.
+
+You can use Amazon S3 to host a static website. On a static website, individual webpages include static content. They might also contain client-side scripts.
+Amazon QuickSight is a fast, cloud-powered business intelligence service that makes it easy to deliver insights to everyone in your organization.
+AWS X-Ray is used for tracing and debugging applications.
+Amazon Route 53 is an intelligent DNS service.
+
+You cannot use IAM to create local user accounts on any system. You are also not charged for what you use, IAM is free to use.
+The featuers of IAM include: Shared access to your AWS account, Identity federation, PCI DSS compliance.
+
+Using AWS you can provision only what you need and adjust resources automatically and elastically. This reduces the amount of resources that are sitting idle which reduces cost.
+
+Amazon Kinesis is used for processing streaming data, not data in EBS volumes.
+You cannot apply S3 lifecycle actions to EBS volumes.
+You can back up the data on your Amazon EBS volumes to Amazon S3 by taking point-in-time snapshots.
+Snapshots are incremental backups, which means that only the blocks on the device that have changed after your most recent snapshot are saved.
+Also, Writing a custom script could work but would not be the easiest method.
+
+Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. Push button scaling means that you can scale the DB at any time without incurring downtime. DynamoDB is schema-less.
+Amazon RDS, Amazon Aurora, and Amazon RedShifts are SQL type of databases and therefore have a schema. They also rely on EC2 instances so cannot be scaled dynamically without incurring downtime (you have to change instance types).
+
+While using AWS Glacier- Expedited retrievals are typically made available within 1–5 minutes. Standard takes 3-5 hours.
+
+AWS Artifact, available in the console, is a self-service audit artifact retrieval portal that provides our customers with on-demand access to AWS’ compliance documentation and AWS agreements.
+
+AWS CloudHSM is a cloud-based hardware security module (HSM) that allows you to easily add secure key storage and high-performance crypto operations to your AWS applications.
+CloudHSM has no upfront costs and provides the ability to start and stop HSMs on-demand, allowing you to provision capacity when and where it is needed quickly and cost-effectively.
+CloudHSM is a managed service that automates time-consuming administrative tasks, such as hardware provisioning, software patching, high availability, and backups.
+
+Amazon Elasticsearch Service is involved with operational analytics such as application monitoring, log analytics and clickstream analytics. Amazon Elasticsearch Service allows you to search, explore, filter, aggregate, and visualize your data in near real-time.
+
+For big data processing using the Spark and Hadoop frameworks, Amazon EMR provides a managed service for processing vast amounts data.
+Amazon Athena is used to analyze data directly in S3 and Glacier using standard SQL queries.
+Amazon QuickSight provides a fast, cloud-powered business analytics service, that that makes it easy to build stunning visualizations and rich dashboards that can be accessed from any browser or mobile device.
+
+AWS Step Functions lets you coordinate multiple AWS services into serverless workflows so you can build and update apps quickly. AWS Step Functions lets you build visual workflows that enable fast translation of business requirements into technical requirements.
+
+AWS Transit Gateway is a service that enables customers to connect their Amazon Virtual Private Clouds (VPCs) and their on-premises networks to a single gateway.
+AWS Direct Connect only connects you to a single Amazon VPC, not multiple VPCs in different Regions.
+Use AWS VPN is a point-to-point connection between an on-premises location and a single Amazon VPC.
+AWS Client VPN allows end users to connect to AWS using a VPN client.
+
+Amazon EC2 Auto Scaling scales horizontally by adding launching and terminating EC2 instances based on actual demand for your application.
+
+The pay-as-you-go pricing model means you only pay for the services and consumption you actually use. You are charged for compute, storage and outbound data transfer. This model reduces capital expenditure as you pay a monthly bill (operational expenditure).
+
+A virtual private gateway is the VPN concentrator on the Amazon side of the VPN connection. You create a virtual private gateway and attach it to the VPC from which you want to create the VPN connection.
+A customer gateway is a physical device or software application on your side of the VPN connection.
+
+Network Address Translation (NAT)  devices and firewalls are not required for an AWS managed VPN.
+
+You can also use a VPC peering connection to allow other VPCs to access resources you have in one of your VPCs.
+They facilitate the sharing of data over private connections between two accounts they own within a region
+
+An internal ELB will not help you to transfer data between accounts. You cannot peer subnets.
+
+AWS Lambda is an event-driven service. For example you can configure an Amazon S3 bucket with event notifications that trigger an AWS Lambda function when data is uploaded to an S3 bucket.
+
+Amazon Open 3D Engine is a game engine service.
+
+Recovery procedures should always be tested ahead of any outage of disaster recovery situation. This is the only way to be sure your recovery procedures are effective.
+
+All support plans provide 24×7 access to customer service, documentation, whitepapers, and support forums.
+
+HTTP response status codes indicate whether a specific HTTP request has been successfully completed.
+- A HTTP 200 codes indicates a successful upload.
+- A HTTP 300 code indicates a redirection.
+- A HTTP 400 code indicates a client error.
+- A HTTP 500 code indicates a server error.
