@@ -2,3 +2,121 @@ AWS Config can be used to track the configuration state of your resources and ho
 With CloudTrail you can audit who made what API calls on what resources at what time. This can help with identifying changes that cause reliability issues.
 
 You can back up the data on your Amazon EBS volumes to Amazon S3 by taking point-in-time snapshots. 
+
+IAM is a global service and all users that are created are able to login to the AWS Management Console from any location.
+
+With the AWS cloud you get fine-grained billing and can turn off resources you are not using easily and not have to pay for them (pay for what you use model).
+
+AWS are responsible for networking infrastructure, updating Amazon EC2 host firmware,  edge locations, Amazon RDS instance patching, Physical security of data center facilities and compute infrastructure.
+Customers are responsible for encrypting data in transit, granting access to individuals and services, networking traffic protection, updating operating systems, Client and server-side data encryption, network and firewall configuration, and setting up server-side encryption on an Amazon S3 bucket.
+
+When an organization leverages the AWS Cloud Adoption Framework for migrating to the cloudchief Information Officers (CIOs) and IT Architects are the primary stakeholders involved in the process
+
+During the Align phase in the AWS Cloud Adoption Framework, organizations work to identify capability gaps and ensure their readiness for adopting cloud services, thereby aligning their existing processes and systems with the requirements and features offered by AWS services.
+
+AWS Organizations offers the following policy types:
+Service control policies (SCPs) offer central control over the maximum available permissions for all of the accounts in your organization.
+Tag policies help you standardize tags across resources in your organization's accounts.
+
+AWS Consolidated Billing is a feature of AWS Organizations that allows you to consolidate billing across multiple linked accounts and benefit from volume pricing discounts.
+AWS Cost Explorer – enables you to visualize your usage patterns over time and to identify your underlying cost drivers.
+AWS Simple Monthly calculator – shows you how much you would pay in AWS if you move your resources.
+
+AWS CloudTrail provides a record of API activity in your account. I.e. who did what to which resource..
+
+You can use resource groups to organize your AWS resources. Resource groups make it easier to manage and automate tasks on large numbers of resources at one time.
+
+An Amazon Elastic Block Store (EBS) volume is often described as a “virtual hard disk in the cloud”.
+EBS volumes are block-level storage volumes that are attached to EC2 instances much as you would attach a virtual hard disk to a virtual machine in a virtual infrastructure.
+
+An Amazon Elastic Network Interface is a networking construct, not a storage construct.
+Amazon S3 is an object-level storage service and is not mounted or attached. You use a REST API over HTTPS to access objects in an object store.
+
+Amazon GuardDuty analyzes your resources using anomaly detection and machine learning. It can alert and trigger other tools to take action.
+
+Amazon SNS is service is used for sending notifications using a publisher/subscriber model.
+
+Amazon Macie is a fully managed data security and data privacy service that uses machine learning and pattern matching to discover and protect your sensitive data in Amazon S3.
+Macie applies machine learning and pattern matching techniques to the Amazon S3 buckets you select to identify and alert you to sensitive data, 
+such as personally identifiable information (PII).
+
+AWS Fargate is a serverless compute engine for containers that works with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS).
+Amazon Elastic Container Registry (ECR) is a fully-managed Docker container registry.
+
+Amazon RedShift is a data warehousing solution, and is unable to run containers.
+Amazon Machine Images (AMI) store configuration information for Amazon EC2 instances.
+
+Though patch management, configuration management, and awareness and training are shared controls. 
+Operating system patching specifically is customer responsibility.
+
+With horizontal scaling you add more instances to a fleet of instances to service demand as it increases. This can be achieved automatically by using AWS Auto Scaling to add instances in response to CloudWatch performance metrics.
+With vertical scaling you are adding CPU, RAM or storage to an existing instance. This may involve modifying the instance type which typically requires a restart. With vertical scaling on AWS scalability is limited by the maximum instance size.
+
+Amazon EMR can process vast amounts of data across resizable clusters of Amazon EC2 instances, it is not a business intelligence tool designed to create and publish interactive dashboards.
+AWS Glue is a fully managed extract, transform, and load (ETL) service that makes it easy for users to prepare and load their data for analytics. It is not designed to create and publish interactive dashboards.
+
+Amazon Redshift is primarily a data warehousing service that allows users to analyze data using standard SQL and existing Business Intelligence tools. While it integrates with various visualization tools, including QuickSight, it is not a tool for creating and publishing dashboards itself.
+
+Amazon QuickSight is a fully managed business intelligence service from AWS that makes it easy to create and publish interactive dashboards that include ML Insights. Dashboards can be accessed from any device, and embedded into your applications, portals, and websites.
+
+Amazon Lex is an AWS service specifically designed to build conversational interfaces using voice and text. Leveraging advanced deep learning functionalities, it enables the creation of chatbots that can engage with users naturally.
+Amazon Transcribe can convert speech to text, it is not designed to build conversational interfaces; its primary function is to transcribe audio files.
+Amazon Comprehend primarily understands the sentiment, language, and entities in a text rather than facilitating conversational interfaces.
+Amazon Textract's focus is on extracting text and data from scanned documents, which does not serve the purpose of creating a conversational chatbot.
+
+Amazon CloudWatch Logs lets you monitor and troubleshoot your systems and applications using your existing system, application and custom log files.
+CloudWatch Logs can be used for real time application and system monitoring as well as long term log retention.
+
+CloudTrail is used for logging who does what in AWS by recording API calls.
+It is used for auditing, not performance or system operational monitoring.
+
+A security group is an instance-level firewall that can be used to control traffic the that reaches (ingress/inbound) and is sent out from (egress/outbound) your EC2 instances.
+Rules are created for inbound or outbound traffic. A security group can be attached to multiple EC2 instances.
+
+Network Access Control Lists (ACL) is subnet-level firewall. You do not attach a Network ACL to an instance, you attach it to a subnet.
+Virtual private gateways (VPG) is the Amazon side of an AWS Managed VPN.
+Route table is not a firewall but a table of routes for directing traffic between subnets within a VPC.
+
+To handle a higher load in your database, you can vertically scale up your master database with a simple push of a button. 
+There are currently over 18 instance sizes that you can choose from for RDS.
+For Amazon Aurora, you have 5 memory-optimized instance sizes to choose from.
+
+In addition to scaling your master database vertically, you can also improve the performance of a read-heavy database by using read replicas to horizontally scale your database. 
+RDS MySQL, PostgreSQL, and MariaDB can have up to 5 read replicas.
+Amazon Aurora can have up to 15 read replicas.
+
+You can scale up by moving to a larger instance size or You can scale up by increasing storage capacity.
+
+You can log into the AWS console using a user name and password. 
+You cannot log in to the AWS console using a key pair, access key & secret ID or certificate.
+
+Amazon RDS is a managed database service that supports MySQL. The DBA can reduce operational overhead by moving to RDS and having less work to do to manage the database.
+
+Amazon S3 is an object-based storage system. You upload your objects into buckets.
+Though S3 is a flat structure (not hierarchical), folders can be used for grouping objects. However, this is not the top-level container.
+Directories are usually associated with filesystems rather than object-based storage systems.
+An Instance Store is a type of ephemeral block-based storage service available to EC2 instances.
+
+Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. 
+Inspector automatically assesses applications for vulnerabilities or deviations from best practices. 
+Inspector uses an agent installed on EC2 instances.
+
+Access keys are long-term credentials for an IAM user or the AWS account root user. You can use access keys to sign programmatic requests to the AWS CLI or AWS API (directly or using the AWS SDK).
+Access keys consist of two parts: an access key ID and a secret access key.
+A key pair is used to securely access EC2 resources and should not be confused with access keys.
+
+Groups are collections of users and have policies attached to them. This enables you to organize groups of users by job function or role and apply relevant policies to the group.
+You can use groups to assign permissions to users and should follow the principal of least privilege when assigning permissions.
+You cannot nest groups. So there is no option for an organizational heirarchy.
+Network ACLs restrict access to the subnets in your VPC.
+IAM policies provide the ability to create custom permission policies.
+
+Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, and IP addresses.
+Elastic Load Balancing provides fault tolerance for applications by automatically balancing traffic across targets – Amazon EC2 instances, containers and IP addresses – and Availability Zones while ensuring only healthy targets receive traffic.
+
+When you launch an instance in Amazon EC2, you have the option of passing user data to the instance that can be used to perform common automated configuration tasks and even run scripts after the instance starts.
+You can pass two types of user data to Amazon EC2: shell scripts and cloud-init directives. User data is data that is supplied by the user at instance launch in the form of a script. 
+User data is limited to 16KB. User data and meta data are not encrypted. Metadata retrieves information about the instance.
+
+
+
