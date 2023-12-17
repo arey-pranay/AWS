@@ -1,1 +1,156 @@
-AWS
+Use Amazon Transcribe to convert speech to text for downstream analysis. Then use Amazon Polly to convey the text results via speech
+
+The AWS account must be able to operate as a standalone account. Only then it can be removed from AWS organizations
+Nothing to do with raising tickets or systems manager.
+
+AWS Shield Standard is activated for all AWS customers, by default.
+AWS WAF, AWS Secrets Manager and AWS Shield Advanced are not on by default.
+
+With the assistance of the DRT (DDoS response team), AWS Shield Advanced includes intelligent DDoS attack detection and mitigation for not only for network layer (layer 3) and transport layer (layer 4) attacks but also for application layer (layer 7) attacks.
+AWS Shield Advanced provides expanded DDoS attack protection for web applications running on the following resources: Amazon EC2,  (ELB), CloudFront, Route 53, Global Accelerator.
+
+Utilize AWS Partner Network (APN) to build a custom solution for this infrastructure migration
+
+AWS Pricing Calculator lets you explore AWS services and create an estimate for the cost of your use cases on AWS.
+AWS Cost Explorer cannot provide the estimate of the monthly AWS bill based on the list of AWS services. AWS Cost Explorer has an easy-to-use interface that lets you visualize, understand, and manage your AWS costs and usage over time.
+AWS Budgets gives the ability to set custom budgets that alert you when your costs or usage exceed (or are forecasted to exceed) your budgeted amount.
+The AWS Cost & Usage Report (AWS CUR) contains the most comprehensive set of AWS cost and usage data available
+
+An instance store provides temporary block-level storage for your instance. This storage is located on disks that are physically attached to the host computer. 
+This is a good option when you need storage with very low latency, but you don't need the data to persist when the instance terminates or you can take advantage of fault-tolerant architectures.
+
+EFS, EBS and S3 are NOT available as a hardware disk on the instance.
+
+AWS CloudTrail is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account.
+This is by default encrypted.
+
+AWS Artifact is your go-to, central resource for compliance-related information that matters to your organization. It provides on-demand access to AWS security and compliance reports and select online agreements. 
+AWS Trusted Advisor is an online tool that provides you real-time guidance to help you provision your resources following AWS best practices. 
+AWS Secrets Manager helps you protect secrets needed to access your applications, services, and IT resources. 
+AWS Systems Manager gives you visibility and control of your infrastructure on AWS. Systems Manager provides a unified user interface so you can view operational data from multiple AWS services and allows you to automate operational tasks across your AWS resources. 
+
+AWS Enterprise Support provides customers with concierge-like service where the main focus is helping the customer achieve their outcomes and find success in the cloud.
+You should use AWS Business Support if you have production workloads on AWS and want 24x7 phone, email and chat access to technical support and architectural guidance in the context of your specific use-cases. 
+AWS Basic Support provides Customer Service & Communities - 24x7 access to customer service, documentation, whitepapers, and support forums. 
+You should use AWS Developer Support plan if you are testing or doing early development on AWS and want the ability to get email-based technical support during business hours.
+
+A VPC endpoint enables you to privately connect your VPC to supported AWS services and VPC endpoint services powered by AWS PrivateLink without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection. 
+
+There are two types of VPC endpoints: interface endpoints and gateway endpoints.
+Amazon DynamoDB only support VPC gateway endpoint. 
+All other services that support VPC Endpoints use a VPC interface endpoint.
+S3 supports both endpoints.
+
+When you provision a Multi-AZ DB Instance, Amazon RDS automatically creates a primary DB Instance and synchronously replicates the data to a standby instance in a different Availability Zone (AZ).
+In case of an infrastructure failure, Amazon RDS performs an automatic failover to the standby (or to a read replica in the case of Amazon Aurora), so that you can resume database operations as soon as the failover is complete.
+
+You cannot deploy only a database via Elastic Beanstalk as its meant for automatic application deployment when you upload your code.
+For RDS, Read replicas allow you to create read-only copies that are synchronized with your master database. There is no standby available while using read replicas.
+You can provision the database via CloudFormation for sure, however, it does not provide any automatic recovery in case of a disaster.
+
+A 3 years term would always be more cost-effective than a 1-year term. 
+Then within a term, "all upfront" is better than "partial upfront" which in turn is better than "no upfront" from a cost savings perspective.
+
+Each AWS Region consists of a minimum of three Availability Zones (AZ)
+Each Availability Zone (AZ) consists of one or more discrete data centers
+
+Amazon DynamoDB is a fully managed, serverless, key-value NoSQL database designed to run high-performance applications at any scale. DynamoDB offers built-in security, continuous backups, automated multi-region replication, in-memory caching, and data export tools.
+DynamoDB global tables replicate data automatically across your choice of AWS Regions and automatically scale capacity to accommodate your workloads. With global tables, your globally distributed applications can access data locally in the selected regions to get single-digit millisecond read and write performance. DynamoDB offers active-active cross-region support that is needed for the company.
+
+ynamoDB Accelerator (DAX) is an in-memory cache that delivers fast read performance for your tables at scale by enabling you to use a fully managed in-memory cache. DAX does not offer active-active cross-Region configuration.
+
+Amazon Aurora (Aurora) is a fully managed relational database engine that's compatible with MySQL and PostgreSQL. With some workloads, Aurora can deliver up to five times the throughput of MySQL and up to three times the throughput of PostgreSQL without requiring changes to most of your existing applications. 
+
+Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching and backups.
+
+AWS Compute Optimizer recommends optimal AWS resources for your workloads to reduce costs and improve performance by using machine learning to analyze historical utilization metrics.
+
+Amazon EFS is a file storage service for use with Amazon EC2. Amazon EFS provides a file system interface, file system access semantics, and concurrently-accessible storage for up to thousands of Amazon EC2 instances. 
+EBS volumes cannot be accessed simultaneously by multiple EC2 instances.
+
+Amazon OpenSearch Service makes it easy for you to perform interactive log analytics, real-time application monitoring, website search, and more. OpenSearch is an open source, distributed search and analytics suite derived from Elasticsearch.
+
+Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on your Amazon EC2 instances.
+
+Amazon GuardDuty is a threat detection service that monitors malicious activity and unauthorized behavior to protect your AWS account.
+This service is for AWS account level access, not for instance-level management like an EC2. GuardDuty cannot be used to check OS vulnerabilities.
+
+Amazon Macie is a fully managed data security and data privacy service that uses machine learning and pattern matching to discover and protect your sensitive data in AWS.
+Macie helps identify and alert you to sensitive data, such as personally identifiable information (PII). 
+
+AWS Shield is a managed Distributed Denial of Service (DDoS) protection service that safeguards applications running on AWS.
+AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources.
+
+Amazon CloudWatch is a monitoring and observability service built for DevOps engineers, developers, site reliability engineers (SREs), and IT managers.
+AWS Trusted Advisor is an online tool that provides you real-time guidance to help you provision your resources following AWS best practices on cost optimization, security, fault tolerance, service limits and performance improvement.
+
+Think resource performance monitoring, events, and alerts; think CloudWatch.
+Think account-specific activity and audit; think CloudTrail.
+Think resource-specific change history, audit, and compliance; think Config.
+
+SDKs take the complexity out of coding by providing language-specific APIs for AWS services. 
+Cloud9 IDE is an offering from AWS under IDEs.
+Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service.
+
+Simple routing policy – Use for a single resource that performs a given function for your domain, for example, a web server that serves content for the example.com website. You can use simple routing to create records in a private hosted zone.
+Failover routing policy – Use when you want to configure active-passive failover. You can use failover routing to create records in a private hosted zone.
+Geolocation routing policy – Use when you want to route traffic based on the location of your users. You can use geolocation routing to create records in a private hosted zone.
+Geoproximity routing policy – Use when you want to route traffic based on the location of your resources and, optionally, shift traffic from resources in one location to resources in another location.
+Latency routing policy – Use when you have resources in multiple AWS Regions and you want to route traffic to the Region that provides the best latency. You can use latency routing to create records in a private hosted zone.
+IP-based routing policy – Use when you want to route traffic based on the location of your users, and have the IP addresses that the traffic originates from.
+Multivalue answer routing policy – Use when you want Route 53 to respond to DNS queries with up to eight healthy records selected at random. You can use multivalue answer routing to create records in a private hosted zone.
+Weighted routing policy – Use to route traffic to multiple resources in proportions that you specify. You can use weighted routing to create records in a private hosted zone.
+
+Amazon S3 Standard-Infrequent Access (S3 Standard-IA) is for data that is accessed less frequently, but requires rapid access when needed.
+Amazon S3 Glacier is a secure, durable, and extremely low-cost Amazon S3 cloud storage class for data archiving and long-term backup. S3 Glacier does not support rapid data retrieval, so this option is ruled out.
+
+A scale out operation adds more instances to an existing pool of instances. This implies, there is no single point of failure.
+
+The AWS Partner Network (APN) is the global partner program for technology and consulting businesses that leverage Amazon Web Services to build solutions and services for customers.
+APN Consulting Partners are professional services firms that help customers of all types and sizes design, architect, build, migrate, and manage their workloads and applications on AWS, accelerating their migration to AWS cloud.
+APN Technology Partners provide hardware, connectivity services, or software solutions that are either hosted on or integrated with, the AWS Cloud. APN Technology Partners cannot help in migrating to AWS and managing applications on AWS Cloud.
+
+Amazon Aurora is a MySQL and PostgreSQL-compatible relational database built for the cloud. 
+The AWS Product team is responsible for applying patches to the underlying OS for AWS Aurora.
+
+Amazon Pinpoint allows marketers and developers to deliver customer-centric engagement experiences by capturing customer usage data to draw real-time insights.
+You can use AWS X-Ray to analyze and debug serverless and distributed applications such as those built using a microservices architecture. With X-Ray, you can understand how your application and its underlying services are performing to identify and troubleshoot the root cause of performance issues and errors.
+
+AWS CloudFormation allows you to use programming languages or a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all Regions and accounts. 
+
+Amazon Redshift is a fully-managed petabyte-scale cloud-based data warehouse product designed for large scale data set storage and analysis.
+AWS Glue is a fully managed extract, transform, and load (ETL) service that makes it easy for customers to prepare and load their data for analytics.
+AWS Storage Gateway is a hybrid cloud storage service that connects your existing on-premises environments with the AWS Cloud.
+AWS Database Migration Service (AWS DMS) helps you migrate databases to AWS quickly and securely. The source database remains fully operational during the migration, minimizing downtime to applications that rely on the database. 
+
+Credits are applied in the following order:
+Soonest expiring
+Least number of applicable products
+Oldest credit
+
+EBS volume can be attached to a single instance in the same Availability Zone (AZ) whereas 
+EFS file system can be mounted on instances across multiple Availability Zones (AZ)
+
+The following AWS services support reservations to optimize costs
+Amazon EC2 Reserved Instances (RI)
+Amazon DynamoDB Reserved Capacity
+Amazon ElastiCache Reserved Nodes
+Amazon RDS RIs
+Amazon Redshift Reserved Nodes
+
+Amazon DocumentDB (with MongoDB compatibility) is a fast, scalable, highly available, and fully managed document database service that supports MongoDB workloads.
+
+Amazon S3 Glacier Deep Archive is Amazon S3’s lowest-cost storage class and supports long-term retention and digital preservation for data that may be accessed once or twice in a year. 
+
+The performance of AWS managed Amazon Relational Database Service (Amazon RDS) instance is better than a customer-managed database instance.
+
+EC2 gives you full control over managing the underlying OS, virtual network configurations, storage, data and applications. So EC2 is an example of an IaaS service.
+
+A Security Group can have allow rules only.
+A Network Address Translation gateway (NAT gateway) is managed by AWS.
+
+There are three fundamental drivers of cost with AWS: compute, storage, and outbound data transfer. In most cases, there is no charge for inbound data transfer or data transfer between other AWS services within the same region. Outbound data transfer is aggregated across services and then charged at the outbound data transfer rate.
+
+The AWS Abuse team can assist you when AWS resources are used to engage in abusive behavior.
+
+AWS Direct Connect is a cloud service solution that makes it easy to establish a dedicated network connection from your premises to AWS. 
