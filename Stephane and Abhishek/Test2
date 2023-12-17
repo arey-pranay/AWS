@@ -1,0 +1,53 @@
+Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Amazon Athena is serverless, so there is no infrastructure to manage, and you pay only for the queries that you run.
+
+Amazon Aurora is a MySQL and PostgreSQL-compatible relational database built for the cloud, that combines the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open source databases. You cannot use Amazon Aurora for SQL analysis on S3 based data.
+
+AWS IAM and Auto Scaling are always free-to-use.
+
+AWS Shield, AWS Web Application Firewall (AWS WAF), and Amazon CloudFront with Amazon Route 53 help mitigate DDoS attacks
+
+AWS Storage Gateway service provides three different types of gateways – Tape Gateway, File Gateway, and Volume Gateway – that seamlessly connect on-premises applications to cloud storage, caching data locally for low-latency access.
+
+With AWS Enterprise Support, you get 24x7 technical support from high-quality engineers
+
+Amazon MQ is a managed message broker service for Apache ActiveMQ and RabbitMQ that makes it easy to set up and operate message brokers on AWS.
+Amazon Simple Queue Service (Amazon SQS) offers a reliable, highly scalable hosted queue for storing messages as they travel between computers. 
+Amazon Simple Notification Service (Amazon SNS) is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication.
+
+Amazon Kinesis Data Streams enables you to build custom applications that process or analyze streaming data for specialized needs.
+
+On AWS Cloud, you can run instances for an application in a multi-AZ deployment to achieve High Availability.
+
+AWS services can be accessed in three different ways:
+AWS Management Console: This is a simple web interface for accessing AWS services.
+AWS Command Line Interface (AWS CLI): You can access AWS services from the command line and automate service management with scripts.
+AWS Software Development Kit (SDK): You can also access via AWS SDK that provides language-specific abstracted APIs for AWS services.
+
+There are three fundamental drivers of cost with AWS: compute, storage, and outbound data transfer. 
+
+The Six Pillars of the "AWS Well Architechted" Framework
+operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability
+
+While the AWS Health - Service Health Dashboard displays the general status of AWS services; 
+the AWS Health - Your Account Health Dashboard gives you a personalized view of the performance and availability of the AWS services underlying your AWS resources.
+
+AWS Local Zones provide fast, secure, and seamless access to the rest of AWS services. You should use AWS Local Zones to deploy workloads closer to your end-users for low-latency requirements.
+AWS Local Zones have their connection to the internet and support AWS Direct Connect, so resources created in the Local Zone can serve local end-users with very low-latency communications.
+
+Amazon EventBridge is a service that provides real-time access to changes in data in AWS services, your own applications, and software as a service (SaaS) applications without writing code. It is serverless also.
+AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume. The lambda has a maximum execution time of 15 minutes, so it can be used to run this log backup process.
+
+Amazon Elastic Container Registry (Amazon ECR) can be used to store, manage, and deploy Docker container images.
+Amazon Elastic Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster.
+You cannot use Amazon Elastic Container Service (Amazon ECS) to store and deploy docker container images.
+
+The Acceptable Use Policy describes prohibited uses of the web services offered by Amazon Web Services, Inc.
+
+Root user account permissions cannot be restricted. The root user password can be changed after creation. Root user credentials should be never be shared with anyone.
+Root user access credentials are the email address and password used to create the AWS account. It is highly recommended to enable Multi-Factor Authentication (MFA) for root user account.
+
+You can use Amazon DynamoDB to store recommendation results with the LEAST operational overhead for any scale.
+Amazon RDS is less operationally efficient than Amazon DynamoDB while building a highly scalable solution.
+Amazon Neptune is a fully managed database service built for the cloud that makes it easier to build and run graph applications. It's not the right fit to store recommendation results with the LEAST operational overhead for any scale.
+
+AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. 
