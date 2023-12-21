@@ -1,3 +1,75 @@
 The Amazon EFS Standard-Infrequent Access (EFS Standard-IA) storage class reduces storage costs for files that are not accessed every day. It does this without sacrificing the high availability, high durability, elasticity, and POSIX file system access that Amazon Elastic File System (Amazon EFS) provides.
 
 Use Amazon Transcribe to convert speech to text for downstream analysis. Then use Amazon Polly to convey the text results via speech
+
+AWS Site-to-Site VPN enables you to securely connect your on-premises network or branch office site to your Amazon Virtual Private Cloud (Amazon VPC).
+A virtual private gateway (VGW) is the VPN concentrator on the Amazon side of the AWS Site-to-Site VPN connection. A customer gateway is a resource in AWS that provides information to AWS about your Customer gateway device.
+
+A security group is stateful, that is, it automatically allows the return traffic
+A network access control list (network ACL) contains a numbered list of rules and evaluates these rules in the increasing order while deciding whether to allow the traffic.
+
+AWS Trusted Advisor analyzes your AWS environment and provides best practice recommendations in five categories: Cost Optimization, Performance, Security, Fault Tolerance, Service Limits.
+
+AWS CAF groups its capabilities in six perspectives: Business, People, Governance, Platform, Security, and Operations.
+
+AWS Transit Gateway connects Amazon Virtual Private Clouds (Amazon VPC) and on-premises networks through a central hub.
+
+Reserved instances (RI) provide you with significant savings (up to 72%) on your Amazon Elastic Compute Cloud (Amazon EC2) costs compared to on-demand instance pricing. 
+
+Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a relational database in the cloud. Read Replicas allow you to create read-only copies that are synchronized with your master database.
+Read Replica improves database scalability.
+
+Number of requests for the AWS Lambda function.
+The time it takes for the AWS Lambda function to execute.
+
+An Instance Store provides temporary block-level storage for your Amazon EC2 instance. This storage is located on disks that are physically attached to the host computer.
+
+For each resource, each tag key must be unique, and each tag key can have only one value.
+You must activate both AWS generated tags and user-defined tags separately before they can appear in Cost Explorer or on a cost allocation report.
+
+Versioning is a means of keeping multiple variants of an object in the same bucket. You can use versioning to preserve, retrieve, and restore every version of every object stored in your Amazon S3 bucket.
+
+AWS Cost & Usage Report (AWS CUR) contains the most comprehensive set of cost and usage data available.
+
+You will pay a fee each time you read from or write data stored on the Amazon Elastic File System (Amazon EFS) - Infrequent Access storage class.
+Amazon Elastic Block Store (Amazon EBS) Snapshots are stored incrementally, which means you are billed only for the changed blocks stored.
+
+All Amazon S3 buckets have encryption configured by default, and objects are automatically encrypted by using server-side encryption with Amazon S3 managed keys (SSE-S3).
+AWS Storage Gateway is a hybrid cloud storage service that gives you on-premises access to virtually unlimited cloud storage.
+
+AWS Snowball is a data transport solution that accelerates moving terabytes to petabytes of data into and out of AWS services using storage devices designed to be secure for physical transport.
+AWS Database Migration Service (AWS DMS) helps you migrate databases from on-premises to AWS quickly and securely.
+
+Amazon DynamoDB and Amazon Elastic File System (Amazon EFS) support High Availability by default.
+
+Amazon Elastic Block Store (Amazon EBS), Instance Store and Amazon Redshift only supports single Availability Zone (AZ) deployments.
+
+AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume. 
+
+Customer Responsibilities:
+Operating system patches and updates of an Amazon Elastic Compute Cloud (Amazon EC2) instance.
+Enabling data encryption of data stored in Amazon Simple Storage Service (Amazon S3) buckets.
+
+AWS Migration Evaluator (Formerly TSO Logic) is a complimentary service to create data-driven business cases for AWS Cloud planning and migration. AWS Migration Evaluator quickly provides a business case to make sound AWS planning and migration decisions. 
+
+Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA) is for data that is accessed less frequently but requires rapid access when needed.
+Amazon S3 Standard offers high durability, availability, and performance object storage for frequently accessed data.
+The Amazon S3 Intelligent-Tiering storage class is designed to optimize costs by automatically moving data to the most cost-effective access tier, without performance impact or operational overhead.
+Amazon S3 Glacier Flexible Retrieval is a secure, durable, and extremely low-cost Amazon S3 cloud storage class for data archiving and long-term backup.
+
+You can monitor your estimated AWS charges by using Amazon CloudWatch. Billing metric data is stored in the US East (N. Virginia) Region and represents worldwide charges. This data includes the estimated charges for every service in AWS that you use, in addition to the estimated overall total of your AWS charges.
+
+Most of the services that AWS offers are Region specific. But few services, by definition, need to be in a global scope because of the underlying service they offer. AWS Identity and Access Management (AWS IAM), Amazon CloudFront, Amazon Route 53 and AWS Web Application Firewall (AWS WAF) are some of the global services.
+
+You can monitor your estimated AWS charges by using Amazon CloudWatch. Billing metric data is stored in the US East (N. Virginia) Region and represents worldwide charges.
+
+A JSON policy document includes these elements:
+Optional policy-wide information at the top of the document
+One or more individual statements
+
+AWS Snowball, a part of the AWS Snow Family, is a data migration and edge computing device. If you have large quantities of data you need to migrate into AWS, offline data transfer with AWS Snowball can overcome the challenge of limited bandwidth, and avoid the need to lease additional bandwidth. AWS Snowball moves terabytes of data in about a week.
+
+Amazon Kendra is an intelligent search service powered by machine learning. Kendra reimagines enterprise search for your websites and applications so your employees and customers can easily find the content they are looking for, even when it’s scattered across multiple locations and content repositories within your organization.
+
+AWS Config provides a detailed view of the configuration of AWS resources in your AWS account. This includes how the resources are related to one another and how they were configured in the past so that you can see how the configurations and relationships change over time. AWS Config is designed to help you oversee your application resources
+
