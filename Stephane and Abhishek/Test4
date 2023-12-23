@@ -78,5 +78,44 @@ Amazon S3 Standard offers high durability, availability, and performance object 
 The Amazon S3 Intelligent-Tiering storage class is designed to optimize costs by automatically moving data to the most cost-effective access tier, without performance impact or operational overhead.
 Retrieval Fee:
 Amazon S3 Glacier Flexible Retrieval is a secure, durable, and extremely low-cost Amazon S3 cloud storage class for data archiving and long-term backup.
-Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA) is for data that is accessed less frequently, but requires rapid access when needed. 
+Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA) is for data that is accessed less frequently, but requires rapid access when needed.
 Amazon S3 Standard-Infrequent Access (S3 Standard-IA) is for data that is accessed less frequently, but requires rapid access when needed. Amazon S3 Standard-Infrequent Access (S3 Standard-IA) offers high durability, high throughput, and low latency of S3 Standard, with a low per GB storage price and per GB retrieval fee. 
+
+To run any containerized workload with Amazon Elastic Container Service (Amazon ECS) that can be interrupted.
+Amazon EC2 Spot Instances let you take advantage of unused EC2 capacity in the AWS cloud. Spot Instances are available at up to a 90% discount compared to On-Demand prices.
+Containers are stateless, fault-tolerant and a great fit for Spot Instances. Spot Instances can be used with Elastic Container Service (ECS) or Elastic Container Service for Kubernetes (EKS) to run any containerized workload, from distributed parallel test systems to applications that map millions of miles a day. 
+Spot instances provide the flexibility of ad-hoc provisioning for multiple instance types in different Availability Zones, with an option to hibernate, stop or terminate instances when EC2 needs the capacity back and Spot Instances are reclaimed.
+
+A Reserved Instance (RI) is a reservation that provides a discounted hourly rate in exchange for an upfront fee and term contract. Services such as Amazon Elastic Compute Cloud (Amazon EC2) and Amazon Relational Database Service (Amazon RDS) use this approach to sell reserved capacity for hourly use of Reserved Instances (RI).
+It is not a virtual machine. It is a commitment to pay in advance for specific Amazon EC2 or Amazon RDS instances.
+
+AWS Global Accelerator is a good fit for non-HTTP use cases.
+AWS Global Accelerator provides static IP addresses that act as a fixed entry point to your applications.
+
+AWS Cost Explorer also supports forecasting to get a better idea of what your costs and usage may look like in the future so that you can plan.
+
+AWS CloudFormation allows you to use programming languages or a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all Regions and accounts. 
+
+AWS Trusted Advisor is an online tool that provides real-time guidance to help provision your resources following AWS best practices. Whether establishing new workflows, developing applications, or as part of ongoing improvement, recommendations provided by Trusted Advisor regularly help keep your solutions provisioned optimally.
+AWS Trusted Advisor analyzes your AWS environment and provides best practice recommendations in five categories: Cost Optimization, Performance, Security, Fault Tolerance, Service Limits.
+
+AWS offers four different support plans to cater to each of its customers - AWS Developer Support, AWS Business Support, AWS Enterprise On-Ramp Support and AWS Enterprise Support plans. A basic support plan is included for all AWS customers.
+Aws gives programmatic access to AWS Support Center features to create, manage and close your support cases to the latter 3 plans.
+
+Amazon S3 Standard offers high durability, availability, and performance object storage for frequently accessed data. Amazon S3 Standard offers low latency and high throughput performance, It is designed for durability of 99.999999999% of objects across multiple Availability Zones (AZ). 
+Amazon S3 Standard has no constraint of a minimum storage duration for objects.
+Please review this illustration for Amazon S3 Storage Classes retrieval fee. 
+You don't need to memorize the actual numbers, just remember that Amazon S3 Standard and Amazon S3 Intelligent-Tiering do not charge any retrieval fee
+
+Free under the Amazon Simple Storage Service (Amazon S3) pricing model:
+Data transferred in from the internet
+Data transferred out to an Amazon Elastic Compute Cloud (Amazon EC2) instance, when the instance is in the same AWS Region as the S3 bucket
+
+You pay for all bandwidth into and out of Amazon S3, except for the following: (1) Data transferred in from the internet, (2) Data transferred out to an Amazon Elastic Compute Cloud (Amazon EC2) instance, when the instance is in the same AWS Region as the S3 bucket, (3) Data transferred out to Amazon CloudFront (CloudFront).
+
+Warm Standby strategy
+When selecting your disaster recovery (DR) strategy, you must weigh the benefits of lower RTO (recovery time objective) and RPO (recovery point objective) vs the costs of implementing and operating a strategy. The pilot light and warm standby strategies both offer a good balance of benefits and cost.
+This strategy replicates data from the primary Region to data resources in the recovery Region, such as Amazon Relational Database Service (Amazon RDS) DB instances or Amazon DynamoDB tables.
+
+AWS Various Backup Policies
+https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-iii-pilot-light-and-warm-standby/
