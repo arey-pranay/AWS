@@ -4,3 +4,65 @@ AWS Pricing Calculator compares the cost of your applications in an on-premises 
 Server administration is included in the IT labor costs.
 Power/Cooling are included in the server, storage, and network cost.
 
+AWS IAM Identity Center is the successor to AWS Single Sign-On (AWS SSO). It is built on top of AWS Identity and Access Management (IAM) to simplify access management to multiple AWS accounts, AWS applications, and other SAML-enabled cloud applications.
+
+You can transfer up to 100PB per Snowmobile, a 45-foot long ruggedized shipping container, pulled by a semi-trailer truck.
+Snowball Edge only provides up to 100 TB of capacity.
+One Snowball only provides up to 80 TB of capacity.
+
+AWS Storage Gateway is a hybrid storage service that enables your on-premises applications to seamlessly use AWS cloud storage. 
+You can use the service for backup and archiving, disaster recovery, cloud data processing, storage tiering, and migration.
+
+You can create a point-in-time snapshot of an Amazon EBS Elastic Volume and use it as a baseline for new volumes or data backup. 
+
+AWS Glue is a fully managed extract, transform, and load (ETL) service that makes it easy for customers to prepare and load their data for analytics. AWS Glue job is meant to be used for batch ETL data processing.
+
+Prepare data for analytics:
+Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon Simple Storage Service (Amazon S3) using standard SQL.
+
+Analytics:
+Athena is serverless, so there is no infrastructure to manage, and you pay only for the queries that you run.
+Amazon Redshift is a fast and scalable data warehouse that makes it simple and cost-effective to analyze all your data across your data warehouse and data lake.
+Amazon EMR provides a managed Hadoop framework that makes it easy, fast, and cost-effective to process vast amounts of data across dynamically scalable Amazon EC2 instances.
+
+Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service.
+Amazon Route 53 offers domain name registration services, where you can search for and register available domain names or transfer in existing domain names to be managed by Route 53.
+Amazon Route 53 can monitor the health and performance of your application as well as your web servers and other resources.
+Despite its name, Amazon Route 53 does not offer IP routing. However, it can route traffic based on multiple criteria, such as endpoint health, geographic location, and latency, using routing policies.
+
+Transfer acceleration is a feature of Amazon's simple storage service (Amazon S3). Amazon S3 Transfer Acceleration (Amazon S3TA) can speed up content transfers to and from Amazon S3 by as much as 50-500% for long-distance transfer of larger objects.
+
+Elastic Load Balancing (ELB) automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, and IP addresses. It can handle the varying load of your application traffic in a single Availability Zone (AZ) or across multiple Availability Zones (AZs).
+Elastic Load Balancing (ELB) offers three types of load balancers that all feature the high availability, automatic scaling, and robust security necessary to make your applications fault-tolerant: Application Load Balancer (best suited for HTTP and HTTPS traffic), Network Load Balancer (best suited for TCPtraffic), and Classic Load Balancer.
+High availability and Fault tolerance.
+
+The AWS Health Dashboard – Service health offers the possibility to subscribe to an RSS feed to be notified of interruptions to each service.
+
+The fundamental charges for EBS volumes are the volume type (based on performance), the storage volume in GB per month provisioned, the number of IOPS provisioned per month, the storage consumed by snapshots, and outbound data transfer.
+
+The customers are responsible for "Security IN the cloud". It includes the configuration of the operating system, network & firewall of applications.
+
+Amazon Lex is a service for building conversational interfaces using voice and text. Powered by the same conversational engine as Amazon Alexa, Amazon Lex provides high-quality speech recognition and language understanding capabilities, enabling the addition of sophisticated, natural language ‘chatbots’ to new and existing applications.
+Amazon Comprehend is a natural language processing (NLP) service that uses machine learning to find meaning and insights in text. Natural Language Processing (NLP) is a way for computers to analyze, understand, and derive meaning from textual information in a smart and useful way.
+
+Purchase convertible reserved instance (RI) if you need additional flexibility, such as the ability to use different instance families, operating systems, or tenancies over the reserved instance (RI) term.
+Convertible reserved instance (RI) provides you with a significant discount (up to 54%) compared to an on-demand instance and can be purchased for a 1-year or 3-year term.
+
+Amazon Personalize enables developers to build applications with the same machine learning (ML) technology used by Amazon.com for real-time personalized recommendations. Amazon Personalize can be used to personalize the end-user experience over any digital channel. Examples include product recommendations for e-commerce, news articles and content recommendation 
+Amazon SageMaker is a fully managed service that provides every developer and data scientist with the ability to build, train, and deploy machine learning (ML) models quickly.
+Amazon Comprehend is a natural-language processing (NLP) service that uses machine learning to uncover information in unstructured data. Instead of combing through documents, the process is simplified and unseen information is easier to understand.
+
+IAM Access advisor shows the service permissions granted to a user and when those services were last accessed. You can use this information to revise your policies.
+IAM policies define permissions for an action regardless of the method that you use to perform the operation.
+
+AWS CloudFormation gives developers and systems administrators an easy way to create and manage a collection of related AWS resources, provisioning and updating them in an orderly and predictable fashion.
+You can use the AWS CloudFormation sample templates or create your own templates to describe your AWS resources, and any associated dependencies or runtime parameters, required to run your application. This provides a single source of truth for all your resources and helps you to standardize infrastructure components used across your organization, enabling configuration compliance and faster troubleshooting.
+AWS CloudFormation templates allow you to estimate the cost of your resources.
+
+It is a Platform as a Service (PaaS) that allows you to deploy and scale web applications and services
+AWS Elastic Beanstalk makes it even easier for developers to quickly deploy and manage applications in the AWS Cloud. 
+
+The AWS Cloud Development Kit (AWS CDK) is an open-source software development framework to define your cloud application resources using familiar programming languages.
+
+AWS Systems Manager allows you to centralize operational data from multiple AWS services and automate tasks across your AWS resources. You can create logical groups of resources such as applications, different layers of an application stack, or production versus development environments.
+
