@@ -1,0 +1,11 @@
+Access keys are long-term credentials for an IAM user or the AWS account root user. You can use access keys to sign programmatic requests to the AWS CLI or AWS API (directly or using the AWS SDK). Access keys consist of two parts: an access key ID (for example, AKIAIOSFODNN7EXAMPLE) and a secret access key (for example, wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY).
+You must use both the access key ID and secret access key together to authenticate your requests.
+
+IAM Username and password & Multi Factor Authentication (MFA) are recommended for signing in to the AWS Management Console to meet security best practices.
+
+You can use AWS Resource Groups to organize your AWS resources. Resource groups make it easier to manage and automate tasks on large numbers of resources at a time.
+
+To help you manage your instances, images, and other Amazon EC2 resources, you can assign your own metadata to each resource in the form of tags. Tags enable you to categorize your AWS resources in different ways.
+
+Use AWS managed master keys that are automatically created in your account for each service is the least effort way to encrypt data for AWS services only in your AWS account using AWS Key Management Service.
+
